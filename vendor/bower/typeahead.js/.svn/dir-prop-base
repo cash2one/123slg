@@ -1,0 +1,15 @@
+K 18
+svn:global-ignores
+V 106
+*.swp
+.DS_Store
+.grunt
+_SpecRunner.html
+dist_temp
+node_modules
+npm-debug.log
+bower_components
+*.iml
+.idea
+
+END

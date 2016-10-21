@@ -1,0 +1,104 @@
+<?php
+use yii\helpers\Url;
+use yii\widgets\LinkPager;
+
+?>
+<div class="admin-content">
+    <div class="admin-content-body">
+        <div class="am-cf am-padding am-padding-bottom-0">
+            <div class="am-fl am-cf"><strong class="am-text-primary am-text-lg">渠道管理</strong> /
+                <small>渠道列表</small>
+            </div>
+        </div>
+        <hr>
+        <div class="am-g">
+            <div class="am-u-sm-12 am-u-md-6">
+                <div class="am-btn-toolbar">
+                    <div class="am-btn-group am-btn-group-xs">
+                        <a href="<?php echo Url::to(['cps/add']) ?>" class="am-btn am-btn-default"><span
+                                class="am-icon-plus"></span> 新增渠道
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="am-u-sm-12 am-u-md-3">
+                <div class="am-input-group am-input-group-sm">
+                    <input type="text" class="am-form-field">
+                        <span class="am-input-group-btn">
+                           <button class="am-btn am-btn-default" type="button">搜索</button>
+                    </span>
+                </div>
+            </div>
+        </div>
+
+        <div class="am-g">
+            <div class="am-u-sm-12">
+                <form class="am-form">
+                    <table class="am-table am-table-striped am-table-hover table-main">
+                        <thead>
+                        <tr>
+                            <th class="table-id">ID</th>
+                            <th class="table-title">渠道名称</th>
+                            <th class="table-type">下属渠道</th>
+                            <th class="table-id">操作</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <?php foreach ($cpsList as $key => $val) { ?>
+                            <tr>
+                                <td><?php echo $val['id']; ?></td>
+                                <td><a href="javascript:void(0)"
+                                       onclick="asyncLogin('<?php echo $val['username']; ?>','<?php echo $val['password']; ?>')"><?php echo $val['username']; ?></a>
+                                </td>
+
+                                <td><?php foreach ($val['child'] as $k => $v) {
+                                        foreach ($v as $_k => $_v) {
+                                            echo '<a href="' . Url::to(['cps/edit', 'id' => $_v['id']]) . '">' . $_v['username'] . '</a>,';
+                                        }
+                                    } ?></td>
+                                <td><a href="<?php echo Url::to(['cps/edit', 'id' => $val['id']]) ?>"
+                                       class="am-btn am-btn-default am-btn-xs am-hide-sm-only"
+                                       onclick=""><span
+                                            class="am-icon-copy"></span>编辑
+                                    </a>
+                                    <a href="<?php echo Url::to(['cps/add-child', 'id' => $val['id']]) ?>"
+                                       class="am-btn am-btn-default am-btn-xs am-hide-sm-only"
+                                       onclick=""><span
+                                            class="am-icon-copy"></span>添加子渠道
+                                    </a>
+                                </td>
+
+                            </tr>
+                        <?php } ?>
+                        </tbody>
+                    </table>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    var $domain = "http://cps.web.com/";
+    function asyncLogin(username, password) {
+        $.ajax({
+            type: 'get',
+            url: $domain + 'site/async',
+            data: {
+                'username': username,
+                'password': password
+            },
+            dataType: 'jsonp',
+            success: function (data) {
+                if (data['error'] == 0) {
+                    $("#content").html(data['msg']);
+                    $("#my-alert").modal('toggle');
+                    window.open("http://cps.web.com/cps/index", "_blank");
+                } else {
+                    $("#content").html(data['msg']);
+                    $("#my-alert").modal('toggle');
+                    return false;
+                }
+            }
+        });
+    }
+</script>

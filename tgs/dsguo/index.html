@@ -1,0 +1,88 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>斗三国-双线服</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta content="网页游戏" name="keywords">
+    <script type="text/javascript" src="../static/js/jquery.min.js"></script>
+    <link href="../static/css/css.css" rel="stylesheet" type="text/css">
+    <meta content="MSHTML 6.00.2900.5726" name="GENERATOR">
+</head>
+<script type="text/javascript">
+    /**
+     * 获得url后面参数的值
+     * @param name
+     * @returns {*}
+     */
+    function getQueryString(name) {
+        var reg = new RegExp('(^|&)' + name + '=([^&]*)(&|$)', 'i');
+        var r = window.location.search.substr(1).match(reg);
+        if (r != null) {
+            return r[2];
+        }
+        return null;
+    }
+    $(function () {
+        $("title").text("斗三国-双线" + getQueryString("server_id") + "服");
+    });
+</script>
+<body>
+
+<div id="flash">
+    <table width="100%" cellspacing="0" cellpadding="0" border="0" align="center">
+        <tbody>
+        <tr>
+            <td>
+                <object width="100%" height="700" align="middle" id="game"
+                        codebase="http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=8,0,0,0"
+                        classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000">
+                    <param value="always" name="allowScriptAccess">
+                    <param value="index.swf" name="movie">
+                    <param value="high" name="quality">
+                    <param value="#000000" name="bgcolor">
+                    <param value="" name="FlashVars">
+                    <param value="transparent" name="wmode">
+                    <embed width="100%" height="700" align="middle" wmode="transparent"
+                           pluginspage="http://www.macromedia.com/go/getflashplayer"
+                           type="application/x-shockwave-flash" allowscriptaccess="always" name="game" bgcolor="#000000"
+                           quality="high" flashvars="" src="index.swf">
+                </object>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+<div id="click_flash"
+     style="position:absolute; left:0; top:0; width:100%; height:100%; background:#000; opacity:0.1; filter: Alpha(Opacity=10); cursor:pointer;"></div>
+<div class="mask" style="display:none">
+    <a href="http://www.123slg.com/" target="_blank" class="skip-to"></a>
+    <div class="reg-pop">
+        <span class="close"></span>
+        <p class="tips">建议使用QQ+号码组合，例如QQ12344，好记不重复！</p>
+        <div class="input-grid">
+            <label for="username">用户名</label>
+            <input type="text" id="txtUserName" onBlur="chkUserName2()">
+            <p id="chk_username">请输入6-12位数字+字母组合</p>
+        </div>
+        <div class="input-grid">
+            <label for="pwd">密码</label>
+            <input type="password" onBlur="chkpas()" id="txtPwd">
+            <p id="chk_pwd">密码长度6-12位字符!</p>
+        </div>
+        <div class="input-grid">
+            <label for="repwd">确认密码</label>
+            <input type="password" id="txtRePwd" onBlur="chkrepwd()">
+            <p id="chk_repwd">请输入相同密码</p>
+        </div>
+        <!--        <div class="create-shortcut">-->
+        <!--            <label><input type="checkbox" id="shortcut">创建快捷方式到桌面</label>-->
+        <!--        </div>-->
+        <button class="btn-start" onClick="Login()">开始游戏</button>
+    </div>
+</div>
+
+<script type="text/javascript" src="../static/js/reg.js"></script>
+
+</body>
+</html>

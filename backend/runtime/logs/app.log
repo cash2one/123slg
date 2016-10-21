@@ -1,0 +1,3946 @@
+2016-09-29 15:17:46 [119.96.9.157][-][52fq45734h85g5v2hh857r8uo7][info][yii\web\Session::open] Session started
+2016-09-29 15:17:46 [119.96.9.157][-][52fq45734h85g5v2hh857r8uo7][info][yii\db\Connection::open] Opening DB connection: mysql:host=127.0.0.1;dbname=slg123
+2016-09-29 15:17:46 [119.96.9.157][-][52fq45734h85g5v2hh857r8uo7][info][yii\db\Command::query] SELECT * FROM `game` WHERE `id`='3'
+2016-09-29 15:17:46 [119.96.9.157][-][52fq45734h85g5v2hh857r8uo7][error][yii\base\ErrorException:2] exception 'yii\base\ErrorException' with message 'mkdir(): Permission denied' in /data/web/slg123/backend/cms/controllers/DefaultController.php:40
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(2, 'mkdir(): Permis...', '/data/web/slg12...', 40, Array)
+#1 /data/web/slg123/backend/cms/controllers/DefaultController.php(40): mkdir('/data/web/slg12...')
+#2 [internal function]: backend\cms\controllers\DefaultController->actionCreate('3')
+#3 /data/web/slg123/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#4 /data/web/slg123/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#5 /data/web/slg123/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('create', Array)
+#6 /data/web/slg123/vendor/yiisoft/yii2/web/Application.php(87): yii\base\Module->runAction('cms/default/cre...', Array)
+#7 /data/web/slg123/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 /data/web/slg123/backend/web/index.php(18): yii\base\Application->run()
+#9 {main}
+2016-09-29 15:17:46 [119.96.9.157][-][52fq45734h85g5v2hh857r8uo7][info][application] $_GET = [
+    'game_id' => '3'
+]
+
+$_COOKIE = [
+    'slg123' => '3rshu2irsuducom73j0fi2n352'
+    'username' => 'abcd7878'
+    'last_game' => '[]'
+    '123slg' => '52fq45734h85g5v2hh857r8uo7'
+    '_csrf-backend' => '52420e9e0c1b4f4260349b1e9805715c3bd1e93b2bb0bd456220bdc251160f0da:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"nwvM8jzKINOlwfDOnQjBEF4rs6dP0iNx\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'admin' => [
+        'id' => '1'
+        'username' => 'xtceetg'
+        'password' => '$2y$08$CgIZuTFRmMf4xufC1wWUNOAdMGd.5Nvz2uNOS6nOojBnET4aRswqe'
+        'status' => '10'
+        'last_time' => '1474953492'
+        'last_ip' => '2002782786'
+        'role_id' => '0'
+    ]
+]
+
+$_SERVER = [
+    'USER' => 'www'
+    'HOME' => '/home/www'
+    'FCGI_ROLE' => 'RESPONDER'
+    'SCRIPT_FILENAME' => '/data/web/slg123/backend/web/index.php'
+    'QUERY_STRING' => 'game_id=3'
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/cms/default/create?game_id=3'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/data/web/slg123/backend/web'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.8.0'
+    'REMOTE_ADDR' => '119.96.9.157'
+    'REMOTE_PORT' => '4628'
+    'SERVER_ADDR' => '10.141.78.241'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'admin.123slg.com'
+    'REDIRECT_STATUS' => '200'
+    'PATH_INFO' => ''
+    'HTTP_HOST' => 'admin.123slg.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.116 Safari/537.36'
+    'HTTP_REFERER' => 'http://admin.123slg.com/cms/default/index'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => 'slg123=3rshu2irsuducom73j0fi2n352; username=abcd7878; last_game=%5B%5D; 123slg=52fq45734h85g5v2hh857r8uo7; _csrf-backend=52420e9e0c1b4f4260349b1e9805715c3bd1e93b2bb0bd456220bdc251160f0da%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22nwvM8jzKINOlwfDOnQjBEF4rs6dP0iNx%22%3B%7D'
+    'PHP_SELF' => ''
+    'REQUEST_TIME_FLOAT' => 1475133466.8356
+    'REQUEST_TIME' => 1475133466
+]
+2016-09-29 15:18:35 [119.96.9.157][-][-][info][yii\web\Session::open] Session started
+2016-09-29 15:18:35 [119.96.9.157][-][-][info][yii\db\Command::query] SELECT `id`, `gamename`, `enname`, `main_site` FROM `game` ORDER BY `id` DESC
+2016-09-29 15:18:35 [119.96.9.157][-][-][info][yii\db\Connection::open] Opening DB connection: mysql:host=127.0.0.1;dbname=slg123
+2016-09-29 15:18:35 [119.96.9.157][-][-][info][yii\db\Command::query] SHOW FULL COLUMNS FROM `game`
+2016-09-29 15:18:35 [119.96.9.157][-][-][info][yii\db\Command::query] SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'game' AND kcu.table_name = 'game'
+2016-09-29 15:18:35 [119.96.9.157][-][-][info][application] $_COOKIE = [
+    'slg123' => '3rshu2irsuducom73j0fi2n352'
+    'username' => 'abcd7878'
+    'last_game' => '[]'
+    '123slg' => '52fq45734h85g5v2hh857r8uo7'
+    '_csrf-backend' => '52420e9e0c1b4f4260349b1e9805715c3bd1e93b2bb0bd456220bdc251160f0da:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"nwvM8jzKINOlwfDOnQjBEF4rs6dP0iNx\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'admin' => [
+        'id' => '1'
+        'username' => 'xtceetg'
+        'password' => '$2y$08$CgIZuTFRmMf4xufC1wWUNOAdMGd.5Nvz2uNOS6nOojBnET4aRswqe'
+        'status' => '10'
+        'last_time' => '1474953492'
+        'last_ip' => '2002782786'
+        'role_id' => '0'
+    ]
+]
+
+$_SERVER = [
+    'USER' => 'www'
+    'HOME' => '/home/www'
+    'FCGI_ROLE' => 'RESPONDER'
+    'SCRIPT_FILENAME' => '/data/web/slg123/backend/web/index.php'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/cms/default/index'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/data/web/slg123/backend/web'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.8.0'
+    'REMOTE_ADDR' => '119.96.9.157'
+    'REMOTE_PORT' => '4628'
+    'SERVER_ADDR' => '10.141.78.241'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'admin.123slg.com'
+    'REDIRECT_STATUS' => '200'
+    'PATH_INFO' => ''
+    'HTTP_HOST' => 'admin.123slg.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.116 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://admin.123slg.com/index/index'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => 'slg123=3rshu2irsuducom73j0fi2n352; username=abcd7878; last_game=%5B%5D; 123slg=52fq45734h85g5v2hh857r8uo7; _csrf-backend=52420e9e0c1b4f4260349b1e9805715c3bd1e93b2bb0bd456220bdc251160f0da%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22nwvM8jzKINOlwfDOnQjBEF4rs6dP0iNx%22%3B%7D'
+    'PHP_SELF' => ''
+    'REQUEST_TIME_FLOAT' => 1475133515.1438
+    'REQUEST_TIME' => 1475133515
+]
+2016-09-29 15:18:38 [119.96.9.157][-][52fq45734h85g5v2hh857r8uo7][info][yii\web\Session::open] Session started
+2016-09-29 15:18:38 [119.96.9.157][-][52fq45734h85g5v2hh857r8uo7][info][yii\db\Connection::open] Opening DB connection: mysql:host=127.0.0.1;dbname=slg123
+2016-09-29 15:18:38 [119.96.9.157][-][52fq45734h85g5v2hh857r8uo7][info][yii\db\Command::query] SELECT * FROM `game` WHERE `id`='3'
+2016-09-29 15:18:38 [119.96.9.157][-][52fq45734h85g5v2hh857r8uo7][error][yii\base\ErrorException:2] exception 'yii\base\ErrorException' with message 'mkdir(): Permission denied' in /data/web/slg123/backend/cms/controllers/DefaultController.php:40
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(2, 'mkdir(): Permis...', '/data/web/slg12...', 40, Array)
+#1 /data/web/slg123/backend/cms/controllers/DefaultController.php(40): mkdir('/data/web/slg12...')
+#2 [internal function]: backend\cms\controllers\DefaultController->actionCreate('3')
+#3 /data/web/slg123/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#4 /data/web/slg123/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#5 /data/web/slg123/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('create', Array)
+#6 /data/web/slg123/vendor/yiisoft/yii2/web/Application.php(87): yii\base\Module->runAction('cms/default/cre...', Array)
+#7 /data/web/slg123/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 /data/web/slg123/backend/web/index.php(18): yii\base\Application->run()
+#9 {main}
+2016-09-29 15:18:38 [119.96.9.157][-][52fq45734h85g5v2hh857r8uo7][info][application] $_GET = [
+    'game_id' => '3'
+]
+
+$_COOKIE = [
+    'slg123' => '3rshu2irsuducom73j0fi2n352'
+    'username' => 'abcd7878'
+    'last_game' => '[]'
+    '123slg' => '52fq45734h85g5v2hh857r8uo7'
+    '_csrf-backend' => '52420e9e0c1b4f4260349b1e9805715c3bd1e93b2bb0bd456220bdc251160f0da:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"nwvM8jzKINOlwfDOnQjBEF4rs6dP0iNx\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'admin' => [
+        'id' => '1'
+        'username' => 'xtceetg'
+        'password' => '$2y$08$CgIZuTFRmMf4xufC1wWUNOAdMGd.5Nvz2uNOS6nOojBnET4aRswqe'
+        'status' => '10'
+        'last_time' => '1474953492'
+        'last_ip' => '2002782786'
+        'role_id' => '0'
+    ]
+]
+
+$_SERVER = [
+    'USER' => 'www'
+    'HOME' => '/home/www'
+    'FCGI_ROLE' => 'RESPONDER'
+    'SCRIPT_FILENAME' => '/data/web/slg123/backend/web/index.php'
+    'QUERY_STRING' => 'game_id=3'
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/cms/default/create?game_id=3'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/data/web/slg123/backend/web'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.8.0'
+    'REMOTE_ADDR' => '119.96.9.157'
+    'REMOTE_PORT' => '4628'
+    'SERVER_ADDR' => '10.141.78.241'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'admin.123slg.com'
+    'REDIRECT_STATUS' => '200'
+    'PATH_INFO' => ''
+    'HTTP_HOST' => 'admin.123slg.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.116 Safari/537.36'
+    'HTTP_REFERER' => 'http://admin.123slg.com/cms/default/index'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => 'slg123=3rshu2irsuducom73j0fi2n352; username=abcd7878; last_game=%5B%5D; 123slg=52fq45734h85g5v2hh857r8uo7; _csrf-backend=52420e9e0c1b4f4260349b1e9805715c3bd1e93b2bb0bd456220bdc251160f0da%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22nwvM8jzKINOlwfDOnQjBEF4rs6dP0iNx%22%3B%7D'
+    'PHP_SELF' => ''
+    'REQUEST_TIME_FLOAT' => 1475133518.0197
+    'REQUEST_TIME' => 1475133518
+]
+2016-09-29 15:19:53 [119.96.9.157][-][-][info][yii\web\Session::open] Session started
+2016-09-29 15:19:53 [119.96.9.157][-][-][info][yii\db\Connection::open] Opening DB connection: mysql:host=127.0.0.1;dbname=slg123
+2016-09-29 15:19:53 [119.96.9.157][-][-][info][yii\db\Command::query] SELECT * FROM `game` WHERE `id`='3'
+2016-09-29 15:19:53 [119.96.9.157][-][-][info][application] $_GET = [
+    'game_id' => '3'
+]
+
+$_COOKIE = [
+    'slg123' => '3rshu2irsuducom73j0fi2n352'
+    'username' => 'abcd7878'
+    'last_game' => '[]'
+    '123slg' => '52fq45734h85g5v2hh857r8uo7'
+    '_csrf-backend' => '52420e9e0c1b4f4260349b1e9805715c3bd1e93b2bb0bd456220bdc251160f0da:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"nwvM8jzKINOlwfDOnQjBEF4rs6dP0iNx\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'admin' => [
+        'id' => '1'
+        'username' => 'xtceetg'
+        'password' => '$2y$08$CgIZuTFRmMf4xufC1wWUNOAdMGd.5Nvz2uNOS6nOojBnET4aRswqe'
+        'status' => '10'
+        'last_time' => '1474953492'
+        'last_ip' => '2002782786'
+        'role_id' => '0'
+    ]
+]
+
+$_SERVER = [
+    'USER' => 'www'
+    'HOME' => '/home/www'
+    'FCGI_ROLE' => 'RESPONDER'
+    'SCRIPT_FILENAME' => '/data/web/slg123/backend/web/index.php'
+    'QUERY_STRING' => 'game_id=3'
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/cms/default/create?game_id=3'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/data/web/slg123/backend/web'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.8.0'
+    'REMOTE_ADDR' => '119.96.9.157'
+    'REMOTE_PORT' => '4686'
+    'SERVER_ADDR' => '10.141.78.241'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'admin.123slg.com'
+    'REDIRECT_STATUS' => '200'
+    'PATH_INFO' => ''
+    'HTTP_HOST' => 'admin.123slg.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.116 Safari/537.36'
+    'HTTP_REFERER' => 'http://admin.123slg.com/cms/default/index'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => 'slg123=3rshu2irsuducom73j0fi2n352; username=abcd7878; last_game=%5B%5D; 123slg=52fq45734h85g5v2hh857r8uo7; _csrf-backend=52420e9e0c1b4f4260349b1e9805715c3bd1e93b2bb0bd456220bdc251160f0da%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22nwvM8jzKINOlwfDOnQjBEF4rs6dP0iNx%22%3B%7D'
+    'PHP_SELF' => ''
+    'REQUEST_TIME_FLOAT' => 1475133593.3578
+    'REQUEST_TIME' => 1475133593
+]
+2016-09-29 15:21:07 [119.96.9.157][-][-][info][yii\web\Session::open] Session started
+2016-09-29 15:21:07 [119.96.9.157][-][-][info][yii\db\Connection::open] Opening DB connection: mysql:host=127.0.0.1;dbname=slg123
+2016-09-29 15:21:07 [119.96.9.157][-][-][info][yii\db\Command::query] SELECT * FROM `game` WHERE `id`='1'
+2016-09-29 15:21:07 [119.96.9.157][-][-][info][application] $_GET = [
+    'game_id' => '1'
+]
+
+$_COOKIE = [
+    'slg123' => '3rshu2irsuducom73j0fi2n352'
+    'username' => 'abcd7878'
+    'last_game' => '[]'
+    '123slg' => '52fq45734h85g5v2hh857r8uo7'
+    '_csrf-backend' => '52420e9e0c1b4f4260349b1e9805715c3bd1e93b2bb0bd456220bdc251160f0da:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"nwvM8jzKINOlwfDOnQjBEF4rs6dP0iNx\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'admin' => [
+        'id' => '1'
+        'username' => 'xtceetg'
+        'password' => '$2y$08$CgIZuTFRmMf4xufC1wWUNOAdMGd.5Nvz2uNOS6nOojBnET4aRswqe'
+        'status' => '10'
+        'last_time' => '1474953492'
+        'last_ip' => '2002782786'
+        'role_id' => '0'
+    ]
+]
+
+$_SERVER = [
+    'USER' => 'www'
+    'HOME' => '/home/www'
+    'FCGI_ROLE' => 'RESPONDER'
+    'SCRIPT_FILENAME' => '/data/web/slg123/backend/web/index.php'
+    'QUERY_STRING' => 'game_id=1'
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/cms/default/create?game_id=1'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/data/web/slg123/backend/web'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.8.0'
+    'REMOTE_ADDR' => '119.96.9.157'
+    'REMOTE_PORT' => '4748'
+    'SERVER_ADDR' => '10.141.78.241'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'admin.123slg.com'
+    'REDIRECT_STATUS' => '200'
+    'PATH_INFO' => ''
+    'HTTP_HOST' => 'admin.123slg.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.116 Safari/537.36'
+    'HTTP_REFERER' => 'http://admin.123slg.com/cms/default/index'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => 'slg123=3rshu2irsuducom73j0fi2n352; username=abcd7878; last_game=%5B%5D; 123slg=52fq45734h85g5v2hh857r8uo7; _csrf-backend=52420e9e0c1b4f4260349b1e9805715c3bd1e93b2bb0bd456220bdc251160f0da%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22nwvM8jzKINOlwfDOnQjBEF4rs6dP0iNx%22%3B%7D'
+    'PHP_SELF' => ''
+    'REQUEST_TIME_FLOAT' => 1475133667.0928
+    'REQUEST_TIME' => 1475133667
+]
+2016-09-29 15:21:10 [119.96.9.157][-][-][info][yii\web\Session::open] Session started
+2016-09-29 15:21:10 [119.96.9.157][-][-][info][yii\db\Connection::open] Opening DB connection: mysql:host=127.0.0.1;dbname=slg123
+2016-09-29 15:21:10 [119.96.9.157][-][-][info][yii\db\Command::query] SELECT * FROM `game` WHERE `id`='3'
+2016-09-29 15:21:10 [119.96.9.157][-][-][info][application] $_GET = [
+    'game_id' => '3'
+]
+
+$_COOKIE = [
+    'slg123' => '3rshu2irsuducom73j0fi2n352'
+    'username' => 'abcd7878'
+    'last_game' => '[]'
+    '123slg' => '52fq45734h85g5v2hh857r8uo7'
+    '_csrf-backend' => '52420e9e0c1b4f4260349b1e9805715c3bd1e93b2bb0bd456220bdc251160f0da:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"nwvM8jzKINOlwfDOnQjBEF4rs6dP0iNx\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'admin' => [
+        'id' => '1'
+        'username' => 'xtceetg'
+        'password' => '$2y$08$CgIZuTFRmMf4xufC1wWUNOAdMGd.5Nvz2uNOS6nOojBnET4aRswqe'
+        'status' => '10'
+        'last_time' => '1474953492'
+        'last_ip' => '2002782786'
+        'role_id' => '0'
+    ]
+]
+
+$_SERVER = [
+    'USER' => 'www'
+    'HOME' => '/home/www'
+    'FCGI_ROLE' => 'RESPONDER'
+    'SCRIPT_FILENAME' => '/data/web/slg123/backend/web/index.php'
+    'QUERY_STRING' => 'game_id=3'
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/cms/default/create?game_id=3'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/data/web/slg123/backend/web'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.8.0'
+    'REMOTE_ADDR' => '119.96.9.157'
+    'REMOTE_PORT' => '4748'
+    'SERVER_ADDR' => '10.141.78.241'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'admin.123slg.com'
+    'REDIRECT_STATUS' => '200'
+    'PATH_INFO' => ''
+    'HTTP_HOST' => 'admin.123slg.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.116 Safari/537.36'
+    'HTTP_REFERER' => 'http://admin.123slg.com/cms/default/index'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => 'slg123=3rshu2irsuducom73j0fi2n352; username=abcd7878; last_game=%5B%5D; 123slg=52fq45734h85g5v2hh857r8uo7; _csrf-backend=52420e9e0c1b4f4260349b1e9805715c3bd1e93b2bb0bd456220bdc251160f0da%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22nwvM8jzKINOlwfDOnQjBEF4rs6dP0iNx%22%3B%7D'
+    'PHP_SELF' => ''
+    'REQUEST_TIME_FLOAT' => 1475133670.6849
+    'REQUEST_TIME' => 1475133670
+]
+2016-10-17 15:51:21 [183.16.191.16][-][-][info][yii\web\Session::open] Session started
+2016-10-17 15:51:21 [183.16.191.16][-][-][info][application] $_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'USER' => 'www'
+    'HOME' => '/home/www'
+    'FCGI_ROLE' => 'RESPONDER'
+    'SCRIPT_FILENAME' => '/data/web/slg123/backend/web/index.php'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/data/web/slg123/backend/web'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.8.0'
+    'REMOTE_ADDR' => '183.16.191.16'
+    'REMOTE_PORT' => '54216'
+    'SERVER_ADDR' => '10.141.78.241'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'admin.123slg.com'
+    'REDIRECT_STATUS' => '200'
+    'PATH_INFO' => ''
+    'HTTP_HOST' => 'admin.123slg.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'PHP_SELF' => ''
+    'REQUEST_TIME_FLOAT' => 1476690681.0027
+    'REQUEST_TIME' => 1476690681
+]
+2016-10-17 15:51:21 [183.16.191.16][-][-][info][yii\web\Session::open] Session started
+2016-10-17 15:51:21 [183.16.191.16][-][-][info][application] $_COOKIE = [
+    '123slg' => 'fbsnegqk5150t770fjrf2ere72'
+    '_csrf-backend' => 'b0ccc8c37dab323ae80e45c0384a6c74c143db89f8491f2cad407734120f3116a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"AFvbHUtn_Z7_osgbUlqOu782zs3rXzpQ\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'USER' => 'www'
+    'HOME' => '/home/www'
+    'FCGI_ROLE' => 'RESPONDER'
+    'SCRIPT_FILENAME' => '/data/web/slg123/backend/web/index.php'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/site/login'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/data/web/slg123/backend/web'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.8.0'
+    'REMOTE_ADDR' => '183.16.191.16'
+    'REMOTE_PORT' => '54216'
+    'SERVER_ADDR' => '10.141.78.241'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'admin.123slg.com'
+    'REDIRECT_STATUS' => '200'
+    'PATH_INFO' => ''
+    'HTTP_HOST' => 'admin.123slg.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => '123slg=fbsnegqk5150t770fjrf2ere72; _csrf-backend=b0ccc8c37dab323ae80e45c0384a6c74c143db89f8491f2cad407734120f3116a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22AFvbHUtn_Z7_osgbUlqOu782zs3rXzpQ%22%3B%7D'
+    'PHP_SELF' => ''
+    'REQUEST_TIME_FLOAT' => 1476690681.0677
+    'REQUEST_TIME' => 1476690681
+]
+2016-10-17 15:51:27 [183.16.191.16][-][fbsnegqk5150t770fjrf2ere72][info][yii\db\Connection::open] Opening DB connection: mysql:host=127.0.0.1;dbname=slg123
+2016-10-17 15:51:27 [183.16.191.16][-][fbsnegqk5150t770fjrf2ere72][info][yii\db\Command::query] SELECT * FROM `admin` WHERE `username`='xtceetg'
+2016-10-17 15:51:27 [183.16.191.16][-][fbsnegqk5150t770fjrf2ere72][info][yii\web\Session::open] Session started
+2016-10-17 15:51:27 [183.16.191.16][-][fbsnegqk5150t770fjrf2ere72][info][yii\db\Command::query] SHOW FULL COLUMNS FROM `admin`
+2016-10-17 15:51:27 [183.16.191.16][-][fbsnegqk5150t770fjrf2ere72][info][yii\db\Command::query] SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'admin' AND kcu.table_name = 'admin'
+2016-10-17 15:51:27 [183.16.191.16][-][fbsnegqk5150t770fjrf2ere72][info][yii\db\Command::execute] UPDATE `admin` SET `last_time`=1476690687, `last_ip`=3071328016 WHERE `id`='1'
+2016-10-17 15:51:27 [183.16.191.16][-][fbsnegqk5150t770fjrf2ere72][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[22003]: Numeric value out of range: 1264 Out of range value for column 'last_ip' at row 1' in /data/web/slg123/vendor/yiisoft/yii2/db/Command.php:844
+Stack trace:
+#0 /data/web/slg123/vendor/yiisoft/yii2/db/Command.php(844): PDOStatement->execute()
+#1 /data/web/slg123/backend/service/AdminService.php(73): yii\db\Command->execute()
+#2 /data/web/slg123/backend/service/AdminService.php(31): backend\service\AdminService->setLoginLog('1')
+#3 /data/web/slg123/backend/controllers/SiteController.php(39): backend\service\AdminService->login('xtceetg', '123456')
+#4 [internal function]: backend\controllers\SiteController->actionLogin()
+#5 /data/web/slg123/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#6 /data/web/slg123/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#7 /data/web/slg123/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('login', Array)
+#8 /data/web/slg123/vendor/yiisoft/yii2/web/Application.php(87): yii\base\Module->runAction('site/login', Array)
+#9 /data/web/slg123/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 /data/web/slg123/backend/web/index.php(18): yii\base\Application->run()
+#11 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[22003]: Numeric value out of range: 1264 Out of range value for column 'last_ip' at row 1
+The SQL being executed was: UPDATE `admin` SET `last_time`=1476690687, `last_ip`=3071328016 WHERE `id`='1'' in /data/web/slg123/vendor/yiisoft/yii2/db/Schema.php:633
+Stack trace:
+#0 /data/web/slg123/vendor/yiisoft/yii2/db/Command.php(854): yii\db\Schema->convertException(Object(PDOException), 'UPDATE `admin` ...')
+#1 /data/web/slg123/backend/service/AdminService.php(73): yii\db\Command->execute()
+#2 /data/web/slg123/backend/service/AdminService.php(31): backend\service\AdminService->setLoginLog('1')
+#3 /data/web/slg123/backend/controllers/SiteController.php(39): backend\service\AdminService->login('xtceetg', '123456')
+#4 [internal function]: backend\controllers\SiteController->actionLogin()
+#5 /data/web/slg123/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#6 /data/web/slg123/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#7 /data/web/slg123/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('login', Array)
+#8 /data/web/slg123/vendor/yiisoft/yii2/web/Application.php(87): yii\base\Module->runAction('site/login', Array)
+#9 /data/web/slg123/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 /data/web/slg123/backend/web/index.php(18): yii\base\Application->run()
+#11 {main}
+Additional Information:
+Array
+(
+    [0] => 22003
+    [1] => 1264
+    [2] => Out of range value for column 'last_ip' at row 1
+)
+
+2016-10-17 15:51:27 [183.16.191.16][-][fbsnegqk5150t770fjrf2ere72][info][application] $_POST = [
+    'username' => 'xtceetg'
+    'password' => '123456'
+    '_csrf-backend' => 'Rm10NXg5WDMHKwJXMGwsXRk3Q2oXSj9REwEFeg0OYAE8HkdHIEMoYg=='
+]
+
+$_COOKIE = [
+    '123slg' => 'fbsnegqk5150t770fjrf2ere72'
+    '_csrf-backend' => 'b0ccc8c37dab323ae80e45c0384a6c74c143db89f8491f2cad407734120f3116a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"AFvbHUtn_Z7_osgbUlqOu782zs3rXzpQ\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'admin' => [
+        'id' => '1'
+        'username' => 'xtceetg'
+        'password' => '$2y$08$CgIZuTFRmMf4xufC1wWUNOAdMGd.5Nvz2uNOS6nOojBnET4aRswqe'
+        'status' => '10'
+        'last_time' => '1475131768'
+        'last_ip' => '454119130'
+        'role_id' => '0'
+    ]
+]
+
+$_SERVER = [
+    'USER' => 'www'
+    'HOME' => '/home/www'
+    'FCGI_ROLE' => 'RESPONDER'
+    'SCRIPT_FILENAME' => '/data/web/slg123/backend/web/index.php'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'POST'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'CONTENT_LENGTH' => '107'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/site/login'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/data/web/slg123/backend/web'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.8.0'
+    'REMOTE_ADDR' => '183.16.191.16'
+    'REMOTE_PORT' => '54216'
+    'SERVER_ADDR' => '10.141.78.241'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'admin.123slg.com'
+    'REDIRECT_STATUS' => '200'
+    'PATH_INFO' => ''
+    'HTTP_HOST' => 'admin.123slg.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CONTENT_LENGTH' => '107'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'HTTP_ORIGIN' => 'http://admin.123slg.com'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36'
+    'HTTP_CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_REFERER' => 'http://admin.123slg.com/site/login'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => '123slg=fbsnegqk5150t770fjrf2ere72; _csrf-backend=b0ccc8c37dab323ae80e45c0384a6c74c143db89f8491f2cad407734120f3116a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22AFvbHUtn_Z7_osgbUlqOu782zs3rXzpQ%22%3B%7D'
+    'PHP_SELF' => ''
+    'REQUEST_TIME_FLOAT' => 1476690687.7931
+    'REQUEST_TIME' => 1476690687
+]
+2016-10-17 15:51:32 [183.16.191.16][-][fbsnegqk5150t770fjrf2ere72][info][yii\db\Connection::open] Opening DB connection: mysql:host=127.0.0.1;dbname=slg123
+2016-10-17 15:51:32 [183.16.191.16][-][fbsnegqk5150t770fjrf2ere72][info][yii\db\Command::query] SELECT * FROM `admin` WHERE `username`='xtceetg'
+2016-10-17 15:51:32 [183.16.191.16][-][fbsnegqk5150t770fjrf2ere72][info][yii\web\Session::open] Session started
+2016-10-17 15:51:32 [183.16.191.16][-][fbsnegqk5150t770fjrf2ere72][info][yii\db\Command::query] SHOW FULL COLUMNS FROM `admin`
+2016-10-17 15:51:32 [183.16.191.16][-][fbsnegqk5150t770fjrf2ere72][info][yii\db\Command::query] SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'admin' AND kcu.table_name = 'admin'
+2016-10-17 15:51:32 [183.16.191.16][-][fbsnegqk5150t770fjrf2ere72][info][yii\db\Command::execute] UPDATE `admin` SET `last_time`=1476690692, `last_ip`=3071328016 WHERE `id`='1'
+2016-10-17 15:51:32 [183.16.191.16][-][fbsnegqk5150t770fjrf2ere72][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[22003]: Numeric value out of range: 1264 Out of range value for column 'last_ip' at row 1' in /data/web/slg123/vendor/yiisoft/yii2/db/Command.php:844
+Stack trace:
+#0 /data/web/slg123/vendor/yiisoft/yii2/db/Command.php(844): PDOStatement->execute()
+#1 /data/web/slg123/backend/service/AdminService.php(73): yii\db\Command->execute()
+#2 /data/web/slg123/backend/service/AdminService.php(31): backend\service\AdminService->setLoginLog('1')
+#3 /data/web/slg123/backend/controllers/SiteController.php(39): backend\service\AdminService->login('xtceetg', '123456')
+#4 [internal function]: backend\controllers\SiteController->actionLogin()
+#5 /data/web/slg123/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#6 /data/web/slg123/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#7 /data/web/slg123/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('login', Array)
+#8 /data/web/slg123/vendor/yiisoft/yii2/web/Application.php(87): yii\base\Module->runAction('site/login', Array)
+#9 /data/web/slg123/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 /data/web/slg123/backend/web/index.php(18): yii\base\Application->run()
+#11 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[22003]: Numeric value out of range: 1264 Out of range value for column 'last_ip' at row 1
+The SQL being executed was: UPDATE `admin` SET `last_time`=1476690692, `last_ip`=3071328016 WHERE `id`='1'' in /data/web/slg123/vendor/yiisoft/yii2/db/Schema.php:633
+Stack trace:
+#0 /data/web/slg123/vendor/yiisoft/yii2/db/Command.php(854): yii\db\Schema->convertException(Object(PDOException), 'UPDATE `admin` ...')
+#1 /data/web/slg123/backend/service/AdminService.php(73): yii\db\Command->execute()
+#2 /data/web/slg123/backend/service/AdminService.php(31): backend\service\AdminService->setLoginLog('1')
+#3 /data/web/slg123/backend/controllers/SiteController.php(39): backend\service\AdminService->login('xtceetg', '123456')
+#4 [internal function]: backend\controllers\SiteController->actionLogin()
+#5 /data/web/slg123/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#6 /data/web/slg123/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#7 /data/web/slg123/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('login', Array)
+#8 /data/web/slg123/vendor/yiisoft/yii2/web/Application.php(87): yii\base\Module->runAction('site/login', Array)
+#9 /data/web/slg123/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 /data/web/slg123/backend/web/index.php(18): yii\base\Application->run()
+#11 {main}
+Additional Information:
+Array
+(
+    [0] => 22003
+    [1] => 1264
+    [2] => Out of range value for column 'last_ip' at row 1
+)
+
+2016-10-17 15:51:32 [183.16.191.16][-][fbsnegqk5150t770fjrf2ere72][info][application] $_POST = [
+    'username' => 'xtceetg'
+    'password' => '123456'
+    '_csrf-backend' => 'Rm10NXg5WDMHKwJXMGwsXRk3Q2oXSj9REwEFeg0OYAE8HkdHIEMoYg=='
+]
+
+$_COOKIE = [
+    '123slg' => 'fbsnegqk5150t770fjrf2ere72'
+    '_csrf-backend' => 'b0ccc8c37dab323ae80e45c0384a6c74c143db89f8491f2cad407734120f3116a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"AFvbHUtn_Z7_osgbUlqOu782zs3rXzpQ\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'admin' => [
+        'id' => '1'
+        'username' => 'xtceetg'
+        'password' => '$2y$08$CgIZuTFRmMf4xufC1wWUNOAdMGd.5Nvz2uNOS6nOojBnET4aRswqe'
+        'status' => '10'
+        'last_time' => '1475131768'
+        'last_ip' => '454119130'
+        'role_id' => '0'
+    ]
+]
+
+$_SERVER = [
+    'USER' => 'www'
+    'HOME' => '/home/www'
+    'FCGI_ROLE' => 'RESPONDER'
+    'SCRIPT_FILENAME' => '/data/web/slg123/backend/web/index.php'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'POST'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'CONTENT_LENGTH' => '107'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/site/login'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/data/web/slg123/backend/web'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.8.0'
+    'REMOTE_ADDR' => '183.16.191.16'
+    'REMOTE_PORT' => '54216'
+    'SERVER_ADDR' => '10.141.78.241'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'admin.123slg.com'
+    'REDIRECT_STATUS' => '200'
+    'PATH_INFO' => ''
+    'HTTP_HOST' => 'admin.123slg.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CONTENT_LENGTH' => '107'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'HTTP_ORIGIN' => 'http://admin.123slg.com'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36'
+    'HTTP_CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_REFERER' => 'http://admin.123slg.com/site/login'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => '123slg=fbsnegqk5150t770fjrf2ere72; _csrf-backend=b0ccc8c37dab323ae80e45c0384a6c74c143db89f8491f2cad407734120f3116a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22AFvbHUtn_Z7_osgbUlqOu782zs3rXzpQ%22%3B%7D'
+    'PHP_SELF' => ''
+    'REQUEST_TIME_FLOAT' => 1476690692.4065
+    'REQUEST_TIME' => 1476690692
+]
+2016-10-17 15:51:44 [183.16.191.16][-][fbsnegqk5150t770fjrf2ere72][info][yii\db\Connection::open] Opening DB connection: mysql:host=127.0.0.1;dbname=slg123
+2016-10-17 15:51:44 [183.16.191.16][-][fbsnegqk5150t770fjrf2ere72][info][yii\db\Command::query] SELECT * FROM `admin` WHERE `username`='xtceetg'
+2016-10-17 15:51:44 [183.16.191.16][-][fbsnegqk5150t770fjrf2ere72][info][yii\web\Session::open] Session started
+2016-10-17 15:51:44 [183.16.191.16][-][fbsnegqk5150t770fjrf2ere72][info][yii\db\Command::query] SHOW FULL COLUMNS FROM `admin`
+2016-10-17 15:51:44 [183.16.191.16][-][fbsnegqk5150t770fjrf2ere72][info][yii\db\Command::query] SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'admin' AND kcu.table_name = 'admin'
+2016-10-17 15:51:44 [183.16.191.16][-][fbsnegqk5150t770fjrf2ere72][info][yii\db\Command::execute] UPDATE `admin` SET `last_time`=1476690704, `last_ip`=3071328016 WHERE `id`='1'
+2016-10-17 15:51:44 [183.16.191.16][-][fbsnegqk5150t770fjrf2ere72][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[22003]: Numeric value out of range: 1264 Out of range value for column 'last_ip' at row 1' in /data/web/slg123/vendor/yiisoft/yii2/db/Command.php:844
+Stack trace:
+#0 /data/web/slg123/vendor/yiisoft/yii2/db/Command.php(844): PDOStatement->execute()
+#1 /data/web/slg123/backend/service/AdminService.php(73): yii\db\Command->execute()
+#2 /data/web/slg123/backend/service/AdminService.php(31): backend\service\AdminService->setLoginLog('1')
+#3 /data/web/slg123/backend/controllers/SiteController.php(39): backend\service\AdminService->login('xtceetg', '123456')
+#4 [internal function]: backend\controllers\SiteController->actionLogin()
+#5 /data/web/slg123/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#6 /data/web/slg123/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#7 /data/web/slg123/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('login', Array)
+#8 /data/web/slg123/vendor/yiisoft/yii2/web/Application.php(87): yii\base\Module->runAction('site/login', Array)
+#9 /data/web/slg123/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 /data/web/slg123/backend/web/index.php(18): yii\base\Application->run()
+#11 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[22003]: Numeric value out of range: 1264 Out of range value for column 'last_ip' at row 1
+The SQL being executed was: UPDATE `admin` SET `last_time`=1476690704, `last_ip`=3071328016 WHERE `id`='1'' in /data/web/slg123/vendor/yiisoft/yii2/db/Schema.php:633
+Stack trace:
+#0 /data/web/slg123/vendor/yiisoft/yii2/db/Command.php(854): yii\db\Schema->convertException(Object(PDOException), 'UPDATE `admin` ...')
+#1 /data/web/slg123/backend/service/AdminService.php(73): yii\db\Command->execute()
+#2 /data/web/slg123/backend/service/AdminService.php(31): backend\service\AdminService->setLoginLog('1')
+#3 /data/web/slg123/backend/controllers/SiteController.php(39): backend\service\AdminService->login('xtceetg', '123456')
+#4 [internal function]: backend\controllers\SiteController->actionLogin()
+#5 /data/web/slg123/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#6 /data/web/slg123/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#7 /data/web/slg123/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('login', Array)
+#8 /data/web/slg123/vendor/yiisoft/yii2/web/Application.php(87): yii\base\Module->runAction('site/login', Array)
+#9 /data/web/slg123/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 /data/web/slg123/backend/web/index.php(18): yii\base\Application->run()
+#11 {main}
+Additional Information:
+Array
+(
+    [0] => 22003
+    [1] => 1264
+    [2] => Out of range value for column 'last_ip' at row 1
+)
+
+2016-10-17 15:51:44 [183.16.191.16][-][fbsnegqk5150t770fjrf2ere72][info][application] $_POST = [
+    'username' => 'xtceetg'
+    'password' => '123456'
+    '_csrf-backend' => 'Rm10NXg5WDMHKwJXMGwsXRk3Q2oXSj9REwEFeg0OYAE8HkdHIEMoYg=='
+]
+
+$_COOKIE = [
+    '123slg' => 'fbsnegqk5150t770fjrf2ere72'
+    '_csrf-backend' => 'b0ccc8c37dab323ae80e45c0384a6c74c143db89f8491f2cad407734120f3116a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"AFvbHUtn_Z7_osgbUlqOu782zs3rXzpQ\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'admin' => [
+        'id' => '1'
+        'username' => 'xtceetg'
+        'password' => '$2y$08$CgIZuTFRmMf4xufC1wWUNOAdMGd.5Nvz2uNOS6nOojBnET4aRswqe'
+        'status' => '10'
+        'last_time' => '1475131768'
+        'last_ip' => '454119130'
+        'role_id' => '0'
+    ]
+]
+
+$_SERVER = [
+    'USER' => 'www'
+    'HOME' => '/home/www'
+    'FCGI_ROLE' => 'RESPONDER'
+    'SCRIPT_FILENAME' => '/data/web/slg123/backend/web/index.php'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'POST'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'CONTENT_LENGTH' => '107'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/site/login'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/data/web/slg123/backend/web'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.8.0'
+    'REMOTE_ADDR' => '183.16.191.16'
+    'REMOTE_PORT' => '54216'
+    'SERVER_ADDR' => '10.141.78.241'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'admin.123slg.com'
+    'REDIRECT_STATUS' => '200'
+    'PATH_INFO' => ''
+    'HTTP_HOST' => 'admin.123slg.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CONTENT_LENGTH' => '107'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'HTTP_ORIGIN' => 'http://admin.123slg.com'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36'
+    'HTTP_CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_REFERER' => 'http://admin.123slg.com/site/login'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => '123slg=fbsnegqk5150t770fjrf2ere72; _csrf-backend=b0ccc8c37dab323ae80e45c0384a6c74c143db89f8491f2cad407734120f3116a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22AFvbHUtn_Z7_osgbUlqOu782zs3rXzpQ%22%3B%7D'
+    'PHP_SELF' => ''
+    'REQUEST_TIME_FLOAT' => 1476690704.1226
+    'REQUEST_TIME' => 1476690704
+]
+2016-10-17 20:12:23 [112.90.82.164][-][-][info][yii\web\Session::open] Session started
+2016-10-17 20:12:23 [112.90.82.164][-][-][info][application] $_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'USER' => 'www'
+    'HOME' => '/home/www'
+    'FCGI_ROLE' => 'RESPONDER'
+    'SCRIPT_FILENAME' => '/data/web/slg123/backend/web/index.php'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/data/web/slg123/backend/web'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.8.0'
+    'REMOTE_ADDR' => '112.90.82.164'
+    'REMOTE_PORT' => '40493'
+    'SERVER_ADDR' => '10.141.78.241'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'admin.123slg.com'
+    'REDIRECT_STATUS' => '200'
+    'PATH_INFO' => ''
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => '*'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'admin.123slg.com'
+    'HTTP_USER_AGENT' => 'DNSPod-Monitor/2.0'
+    'PHP_SELF' => ''
+    'REQUEST_TIME_FLOAT' => 1476706343.8815
+    'REQUEST_TIME' => 1476706343
+]
+2016-10-17 20:12:23 [183.60.5.176][-][-][info][yii\web\Session::open] Session started
+2016-10-17 20:12:23 [183.60.5.176][-][-][info][application] $_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'USER' => 'www'
+    'HOME' => '/home/www'
+    'FCGI_ROLE' => 'RESPONDER'
+    'SCRIPT_FILENAME' => '/data/web/slg123/backend/web/index.php'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/data/web/slg123/backend/web'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.8.0'
+    'REMOTE_ADDR' => '183.60.5.176'
+    'REMOTE_PORT' => '29157'
+    'SERVER_ADDR' => '10.141.78.241'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'admin.123slg.com'
+    'REDIRECT_STATUS' => '200'
+    'PATH_INFO' => ''
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => '*'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'admin.123slg.com'
+    'HTTP_USER_AGENT' => 'DNSPod-Monitor/2.0'
+    'PHP_SELF' => ''
+    'REQUEST_TIME_FLOAT' => 1476706343.8798
+    'REQUEST_TIME' => 1476706343
+]
+2016-10-17 20:12:23 [112.65.192.53][-][-][info][yii\web\Session::open] Session started
+2016-10-17 20:12:23 [112.65.192.53][-][-][info][application] $_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'USER' => 'www'
+    'HOME' => '/home/www'
+    'FCGI_ROLE' => 'RESPONDER'
+    'SCRIPT_FILENAME' => '/data/web/slg123/backend/web/index.php'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/data/web/slg123/backend/web'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.8.0'
+    'REMOTE_ADDR' => '112.65.192.53'
+    'REMOTE_PORT' => '43514'
+    'SERVER_ADDR' => '10.141.78.241'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'admin.123slg.com'
+    'REDIRECT_STATUS' => '200'
+    'PATH_INFO' => ''
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => '*'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'admin.123slg.com'
+    'HTTP_USER_AGENT' => 'DNSPod-Monitor/2.0'
+    'PHP_SELF' => ''
+    'REQUEST_TIME_FLOAT' => 1476706343.8771
+    'REQUEST_TIME' => 1476706343
+]
+2016-10-17 20:12:23 [183.232.90.77][-][-][info][yii\web\Session::open] Session started
+2016-10-17 20:12:23 [183.232.90.77][-][-][info][application] $_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'USER' => 'www'
+    'HOME' => '/home/www'
+    'FCGI_ROLE' => 'RESPONDER'
+    'SCRIPT_FILENAME' => '/data/web/slg123/backend/web/index.php'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/data/web/slg123/backend/web'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.8.0'
+    'REMOTE_ADDR' => '183.232.90.77'
+    'REMOTE_PORT' => '48542'
+    'SERVER_ADDR' => '10.141.78.241'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'admin.123slg.com'
+    'REDIRECT_STATUS' => '200'
+    'PATH_INFO' => ''
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => '*'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'admin.123slg.com'
+    'HTTP_USER_AGENT' => 'DNSPod-Monitor/2.0'
+    'PHP_SELF' => ''
+    'REQUEST_TIME_FLOAT' => 1476706343.8933
+    'REQUEST_TIME' => 1476706343
+]
+2016-10-17 20:12:23 [180.153.212.45][-][-][info][yii\web\Session::open] Session started
+2016-10-17 20:12:23 [180.153.212.45][-][-][info][application] $_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'USER' => 'www'
+    'HOME' => '/home/www'
+    'FCGI_ROLE' => 'RESPONDER'
+    'SCRIPT_FILENAME' => '/data/web/slg123/backend/web/index.php'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/data/web/slg123/backend/web'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.8.0'
+    'REMOTE_ADDR' => '180.153.212.45'
+    'REMOTE_PORT' => '26834'
+    'SERVER_ADDR' => '10.141.78.241'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'admin.123slg.com'
+    'REDIRECT_STATUS' => '200'
+    'PATH_INFO' => ''
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => '*'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'admin.123slg.com'
+    'HTTP_USER_AGENT' => 'DNSPod-Monitor/2.0'
+    'PHP_SELF' => ''
+    'REQUEST_TIME_FLOAT' => 1476706343.912
+    'REQUEST_TIME' => 1476706343
+]
+2016-10-17 20:15:46 [183.232.90.77][-][-][info][yii\web\Session::open] Session started
+2016-10-17 20:15:46 [183.232.90.77][-][-][info][application] $_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'USER' => 'www'
+    'HOME' => '/home/www'
+    'FCGI_ROLE' => 'RESPONDER'
+    'SCRIPT_FILENAME' => '/data/web/slg123/backend/web/index.php'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/data/web/slg123/backend/web'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.8.0'
+    'REMOTE_ADDR' => '183.232.90.77'
+    'REMOTE_PORT' => '58174'
+    'SERVER_ADDR' => '10.141.78.241'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'admin.123slg.com'
+    'REDIRECT_STATUS' => '200'
+    'PATH_INFO' => ''
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => '*'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'admin.123slg.com'
+    'HTTP_USER_AGENT' => 'DNSPod-Monitor/2.0'
+    'PHP_SELF' => ''
+    'REQUEST_TIME_FLOAT' => 1476706546.0935
+    'REQUEST_TIME' => 1476706546
+]
+2016-10-17 20:16:25 [119.147.193.63][-][-][info][yii\web\Session::open] Session started
+2016-10-17 20:16:25 [119.147.193.63][-][-][info][application] $_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'USER' => 'www'
+    'HOME' => '/home/www'
+    'FCGI_ROLE' => 'RESPONDER'
+    'SCRIPT_FILENAME' => '/data/web/slg123/backend/web/index.php'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/data/web/slg123/backend/web'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.8.0'
+    'REMOTE_ADDR' => '119.147.193.63'
+    'REMOTE_PORT' => '22972'
+    'SERVER_ADDR' => '10.141.78.241'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'admin.123slg.com'
+    'REDIRECT_STATUS' => '200'
+    'PATH_INFO' => ''
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => '*'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'admin.123slg.com'
+    'HTTP_USER_AGENT' => 'DNSPod-Monitor/2.0'
+    'PHP_SELF' => ''
+    'REQUEST_TIME_FLOAT' => 1476706585.8162
+    'REQUEST_TIME' => 1476706585
+]
+2016-10-17 20:17:05 [140.207.189.165][-][-][info][yii\web\Session::open] Session started
+2016-10-17 20:17:05 [140.207.189.165][-][-][info][application] $_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'USER' => 'www'
+    'HOME' => '/home/www'
+    'FCGI_ROLE' => 'RESPONDER'
+    'SCRIPT_FILENAME' => '/data/web/slg123/backend/web/index.php'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/data/web/slg123/backend/web'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.8.0'
+    'REMOTE_ADDR' => '140.207.189.165'
+    'REMOTE_PORT' => '44753'
+    'SERVER_ADDR' => '10.141.78.241'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'admin.123slg.com'
+    'REDIRECT_STATUS' => '200'
+    'PATH_INFO' => ''
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => '*'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'admin.123slg.com'
+    'HTTP_USER_AGENT' => 'DNSPod-Monitor/2.0'
+    'PHP_SELF' => ''
+    'REQUEST_TIME_FLOAT' => 1476706625.4378
+    'REQUEST_TIME' => 1476706625
+]
+2016-10-17 20:17:43 [112.90.82.139][-][-][info][yii\web\Session::open] Session started
+2016-10-17 20:17:43 [112.90.82.139][-][-][info][application] $_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'USER' => 'www'
+    'HOME' => '/home/www'
+    'FCGI_ROLE' => 'RESPONDER'
+    'SCRIPT_FILENAME' => '/data/web/slg123/backend/web/index.php'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/data/web/slg123/backend/web'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.8.0'
+    'REMOTE_ADDR' => '112.90.82.139'
+    'REMOTE_PORT' => '36685'
+    'SERVER_ADDR' => '10.141.78.241'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'admin.123slg.com'
+    'REDIRECT_STATUS' => '200'
+    'PATH_INFO' => ''
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => '*'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'admin.123slg.com'
+    'HTTP_USER_AGENT' => 'DNSPod-Monitor/2.0'
+    'PHP_SELF' => ''
+    'REQUEST_TIME_FLOAT' => 1476706663.138
+    'REQUEST_TIME' => 1476706663
+]
+2016-10-17 20:17:50 [180.153.212.45][-][-][info][yii\web\Session::open] Session started
+2016-10-17 20:17:50 [180.153.212.45][-][-][info][application] $_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'USER' => 'www'
+    'HOME' => '/home/www'
+    'FCGI_ROLE' => 'RESPONDER'
+    'SCRIPT_FILENAME' => '/data/web/slg123/backend/web/index.php'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/data/web/slg123/backend/web'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.8.0'
+    'REMOTE_ADDR' => '180.153.212.45'
+    'REMOTE_PORT' => '27563'
+    'SERVER_ADDR' => '10.141.78.241'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'admin.123slg.com'
+    'REDIRECT_STATUS' => '200'
+    'PATH_INFO' => ''
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => '*'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'admin.123slg.com'
+    'HTTP_USER_AGENT' => 'DNSPod-Monitor/2.0'
+    'PHP_SELF' => ''
+    'REQUEST_TIME_FLOAT' => 1476706670.3332
+    'REQUEST_TIME' => 1476706670
+]
+2016-10-17 20:18:46 [183.232.90.77][-][-][info][yii\web\Session::open] Session started
+2016-10-17 20:18:46 [183.232.90.77][-][-][info][application] $_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'USER' => 'www'
+    'HOME' => '/home/www'
+    'FCGI_ROLE' => 'RESPONDER'
+    'SCRIPT_FILENAME' => '/data/web/slg123/backend/web/index.php'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/data/web/slg123/backend/web'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.8.0'
+    'REMOTE_ADDR' => '183.232.90.77'
+    'REMOTE_PORT' => '35987'
+    'SERVER_ADDR' => '10.141.78.241'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'admin.123slg.com'
+    'REDIRECT_STATUS' => '200'
+    'PATH_INFO' => ''
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => '*'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'admin.123slg.com'
+    'HTTP_USER_AGENT' => 'DNSPod-Monitor/2.0'
+    'PHP_SELF' => ''
+    'REQUEST_TIME_FLOAT' => 1476706726.8136
+    'REQUEST_TIME' => 1476706726
+]
+2016-10-17 20:19:26 [119.147.193.63][-][-][info][yii\web\Session::open] Session started
+2016-10-17 20:19:26 [119.147.193.63][-][-][info][application] $_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'USER' => 'www'
+    'HOME' => '/home/www'
+    'FCGI_ROLE' => 'RESPONDER'
+    'SCRIPT_FILENAME' => '/data/web/slg123/backend/web/index.php'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/data/web/slg123/backend/web'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.8.0'
+    'REMOTE_ADDR' => '119.147.193.63'
+    'REMOTE_PORT' => '49771'
+    'SERVER_ADDR' => '10.141.78.241'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'admin.123slg.com'
+    'REDIRECT_STATUS' => '200'
+    'PATH_INFO' => ''
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => '*'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'admin.123slg.com'
+    'HTTP_USER_AGENT' => 'DNSPod-Monitor/2.0'
+    'PHP_SELF' => ''
+    'REQUEST_TIME_FLOAT' => 1476706766.4597
+    'REQUEST_TIME' => 1476706766
+]
+2016-10-17 20:20:06 [112.65.192.53][-][-][info][yii\web\Session::open] Session started
+2016-10-17 20:20:05 [112.65.192.53][-][-][info][application] $_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'USER' => 'www'
+    'HOME' => '/home/www'
+    'FCGI_ROLE' => 'RESPONDER'
+    'SCRIPT_FILENAME' => '/data/web/slg123/backend/web/index.php'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/data/web/slg123/backend/web'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.8.0'
+    'REMOTE_ADDR' => '112.65.192.53'
+    'REMOTE_PORT' => '57391'
+    'SERVER_ADDR' => '10.141.78.241'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'admin.123slg.com'
+    'REDIRECT_STATUS' => '200'
+    'PATH_INFO' => ''
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => '*'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'admin.123slg.com'
+    'HTTP_USER_AGENT' => 'DNSPod-Monitor/2.0'
+    'PHP_SELF' => ''
+    'REQUEST_TIME_FLOAT' => 1476706805.9992
+    'REQUEST_TIME' => 1476706805
+]
+2016-10-17 20:20:43 [112.90.82.139][-][-][info][yii\web\Session::open] Session started
+2016-10-17 20:20:43 [112.90.82.139][-][-][info][application] $_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'USER' => 'www'
+    'HOME' => '/home/www'
+    'FCGI_ROLE' => 'RESPONDER'
+    'SCRIPT_FILENAME' => '/data/web/slg123/backend/web/index.php'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/data/web/slg123/backend/web'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.8.0'
+    'REMOTE_ADDR' => '112.90.82.139'
+    'REMOTE_PORT' => '28632'
+    'SERVER_ADDR' => '10.141.78.241'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'admin.123slg.com'
+    'REDIRECT_STATUS' => '200'
+    'PATH_INFO' => ''
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => '*'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'admin.123slg.com'
+    'HTTP_USER_AGENT' => 'DNSPod-Monitor/2.0'
+    'PHP_SELF' => ''
+    'REQUEST_TIME_FLOAT' => 1476706843.7104
+    'REQUEST_TIME' => 1476706843
+]
+2016-10-17 20:20:50 [180.153.81.158][-][-][info][yii\web\Session::open] Session started
+2016-10-17 20:20:50 [180.153.81.158][-][-][info][application] $_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'USER' => 'www'
+    'HOME' => '/home/www'
+    'FCGI_ROLE' => 'RESPONDER'
+    'SCRIPT_FILENAME' => '/data/web/slg123/backend/web/index.php'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/data/web/slg123/backend/web'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.8.0'
+    'REMOTE_ADDR' => '180.153.81.158'
+    'REMOTE_PORT' => '32149'
+    'SERVER_ADDR' => '10.141.78.241'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'admin.123slg.com'
+    'REDIRECT_STATUS' => '200'
+    'PATH_INFO' => ''
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => '*'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'admin.123slg.com'
+    'HTTP_USER_AGENT' => 'DNSPod-Monitor/2.0'
+    'PHP_SELF' => ''
+    'REQUEST_TIME_FLOAT' => 1476706850.936
+    'REQUEST_TIME' => 1476706850
+]
+2016-10-17 20:21:46 [183.232.90.77][-][-][info][yii\web\Session::open] Session started
+2016-10-17 20:21:46 [183.232.90.77][-][-][info][application] $_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'USER' => 'www'
+    'HOME' => '/home/www'
+    'FCGI_ROLE' => 'RESPONDER'
+    'SCRIPT_FILENAME' => '/data/web/slg123/backend/web/index.php'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/data/web/slg123/backend/web'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.8.0'
+    'REMOTE_ADDR' => '183.232.90.77'
+    'REMOTE_PORT' => '35812'
+    'SERVER_ADDR' => '10.141.78.241'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'admin.123slg.com'
+    'REDIRECT_STATUS' => '200'
+    'PATH_INFO' => ''
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => '*'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'admin.123slg.com'
+    'HTTP_USER_AGENT' => 'DNSPod-Monitor/2.0'
+    'PHP_SELF' => ''
+    'REQUEST_TIME_FLOAT' => 1476706906.3759
+    'REQUEST_TIME' => 1476706906
+]
+2016-10-17 20:22:26 [119.147.193.63][-][-][info][yii\web\Session::open] Session started
+2016-10-17 20:22:26 [119.147.193.63][-][-][info][application] $_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'USER' => 'www'
+    'HOME' => '/home/www'
+    'FCGI_ROLE' => 'RESPONDER'
+    'SCRIPT_FILENAME' => '/data/web/slg123/backend/web/index.php'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/data/web/slg123/backend/web'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.8.0'
+    'REMOTE_ADDR' => '119.147.193.63'
+    'REMOTE_PORT' => '22347'
+    'SERVER_ADDR' => '10.141.78.241'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'admin.123slg.com'
+    'REDIRECT_STATUS' => '200'
+    'PATH_INFO' => ''
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => '*'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'admin.123slg.com'
+    'HTTP_USER_AGENT' => 'DNSPod-Monitor/2.0'
+    'PHP_SELF' => ''
+    'REQUEST_TIME_FLOAT' => 1476706946.0767
+    'REQUEST_TIME' => 1476706946
+]
+2016-10-17 20:23:05 [112.65.192.53][-][-][info][yii\web\Session::open] Session started
+2016-10-17 20:23:05 [112.65.192.53][-][-][info][application] $_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'USER' => 'www'
+    'HOME' => '/home/www'
+    'FCGI_ROLE' => 'RESPONDER'
+    'SCRIPT_FILENAME' => '/data/web/slg123/backend/web/index.php'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/data/web/slg123/backend/web'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.8.0'
+    'REMOTE_ADDR' => '112.65.192.53'
+    'REMOTE_PORT' => '40923'
+    'SERVER_ADDR' => '10.141.78.241'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'admin.123slg.com'
+    'REDIRECT_STATUS' => '200'
+    'PATH_INFO' => ''
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => '*'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'admin.123slg.com'
+    'HTTP_USER_AGENT' => 'DNSPod-Monitor/2.0'
+    'PHP_SELF' => ''
+    'REQUEST_TIME_FLOAT' => 1476706985.6838
+    'REQUEST_TIME' => 1476706985
+]
+2016-10-17 20:23:43 [112.90.82.164][-][-][info][yii\web\Session::open] Session started
+2016-10-17 20:23:43 [112.90.82.164][-][-][info][application] $_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'USER' => 'www'
+    'HOME' => '/home/www'
+    'FCGI_ROLE' => 'RESPONDER'
+    'SCRIPT_FILENAME' => '/data/web/slg123/backend/web/index.php'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/data/web/slg123/backend/web'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.8.0'
+    'REMOTE_ADDR' => '112.90.82.164'
+    'REMOTE_PORT' => '56507'
+    'SERVER_ADDR' => '10.141.78.241'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'admin.123slg.com'
+    'REDIRECT_STATUS' => '200'
+    'PATH_INFO' => ''
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => '*'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'admin.123slg.com'
+    'HTTP_USER_AGENT' => 'DNSPod-Monitor/2.0'
+    'PHP_SELF' => ''
+    'REQUEST_TIME_FLOAT' => 1476707023.3722
+    'REQUEST_TIME' => 1476707023
+]
+2016-10-17 20:23:50 [101.226.73.30][-][-][info][yii\web\Session::open] Session started
+2016-10-17 20:23:50 [101.226.73.30][-][-][info][application] $_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'USER' => 'www'
+    'HOME' => '/home/www'
+    'FCGI_ROLE' => 'RESPONDER'
+    'SCRIPT_FILENAME' => '/data/web/slg123/backend/web/index.php'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/data/web/slg123/backend/web'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.8.0'
+    'REMOTE_ADDR' => '101.226.73.30'
+    'REMOTE_PORT' => '43429'
+    'SERVER_ADDR' => '10.141.78.241'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'admin.123slg.com'
+    'REDIRECT_STATUS' => '200'
+    'PATH_INFO' => ''
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => '*'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'admin.123slg.com'
+    'HTTP_USER_AGENT' => 'DNSPod-Monitor/2.0'
+    'PHP_SELF' => ''
+    'REQUEST_TIME_FLOAT' => 1476707030.6006
+    'REQUEST_TIME' => 1476707030
+]
+2016-10-17 20:24:47 [183.232.90.77][-][-][info][yii\web\Session::open] Session started
+2016-10-17 20:24:47 [183.232.90.77][-][-][info][application] $_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'USER' => 'www'
+    'HOME' => '/home/www'
+    'FCGI_ROLE' => 'RESPONDER'
+    'SCRIPT_FILENAME' => '/data/web/slg123/backend/web/index.php'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/data/web/slg123/backend/web'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.8.0'
+    'REMOTE_ADDR' => '183.232.90.77'
+    'REMOTE_PORT' => '34940'
+    'SERVER_ADDR' => '10.141.78.241'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'admin.123slg.com'
+    'REDIRECT_STATUS' => '200'
+    'PATH_INFO' => ''
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => '*'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'admin.123slg.com'
+    'HTTP_USER_AGENT' => 'DNSPod-Monitor/2.0'
+    'PHP_SELF' => ''
+    'REQUEST_TIME_FLOAT' => 1476707087.0788
+    'REQUEST_TIME' => 1476707087
+]
+2016-10-17 20:25:26 [119.147.193.63][-][-][info][yii\web\Session::open] Session started
+2016-10-17 20:25:26 [119.147.193.63][-][-][info][application] $_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'USER' => 'www'
+    'HOME' => '/home/www'
+    'FCGI_ROLE' => 'RESPONDER'
+    'SCRIPT_FILENAME' => '/data/web/slg123/backend/web/index.php'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/data/web/slg123/backend/web'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.8.0'
+    'REMOTE_ADDR' => '119.147.193.63'
+    'REMOTE_PORT' => '24825'
+    'SERVER_ADDR' => '10.141.78.241'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'admin.123slg.com'
+    'REDIRECT_STATUS' => '200'
+    'PATH_INFO' => ''
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => '*'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'admin.123slg.com'
+    'HTTP_USER_AGENT' => 'DNSPod-Monitor/2.0'
+    'PHP_SELF' => ''
+    'REQUEST_TIME_FLOAT' => 1476707126.7078
+    'REQUEST_TIME' => 1476707126
+]
+2016-10-17 20:26:06 [112.65.192.29][-][-][info][yii\web\Session::open] Session started
+2016-10-17 20:26:06 [112.65.192.29][-][-][info][application] $_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'USER' => 'www'
+    'HOME' => '/home/www'
+    'FCGI_ROLE' => 'RESPONDER'
+    'SCRIPT_FILENAME' => '/data/web/slg123/backend/web/index.php'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/data/web/slg123/backend/web'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.8.0'
+    'REMOTE_ADDR' => '112.65.192.29'
+    'REMOTE_PORT' => '56200'
+    'SERVER_ADDR' => '10.141.78.241'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'admin.123slg.com'
+    'REDIRECT_STATUS' => '200'
+    'PATH_INFO' => ''
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => '*'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'admin.123slg.com'
+    'HTTP_USER_AGENT' => 'DNSPod-Monitor/2.0'
+    'PHP_SELF' => ''
+    'REQUEST_TIME_FLOAT' => 1476707166.3015
+    'REQUEST_TIME' => 1476707166
+]
+2016-10-17 20:26:43 [112.90.141.121][-][-][info][yii\web\Session::open] Session started
+2016-10-17 20:26:43 [112.90.141.121][-][-][info][application] $_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'USER' => 'www'
+    'HOME' => '/home/www'
+    'FCGI_ROLE' => 'RESPONDER'
+    'SCRIPT_FILENAME' => '/data/web/slg123/backend/web/index.php'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/data/web/slg123/backend/web'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.8.0'
+    'REMOTE_ADDR' => '112.90.141.121'
+    'REMOTE_PORT' => '32937'
+    'SERVER_ADDR' => '10.141.78.241'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'admin.123slg.com'
+    'REDIRECT_STATUS' => '200'
+    'PATH_INFO' => ''
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => '*'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'admin.123slg.com'
+    'HTTP_USER_AGENT' => 'DNSPod-Monitor/2.0'
+    'PHP_SELF' => ''
+    'REQUEST_TIME_FLOAT' => 1476707203.9567
+    'REQUEST_TIME' => 1476707203
+]
+2016-10-17 20:26:51 [101.226.73.30][-][-][info][yii\web\Session::open] Session started
+2016-10-17 20:26:51 [101.226.73.30][-][-][info][application] $_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'USER' => 'www'
+    'HOME' => '/home/www'
+    'FCGI_ROLE' => 'RESPONDER'
+    'SCRIPT_FILENAME' => '/data/web/slg123/backend/web/index.php'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/data/web/slg123/backend/web'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.8.0'
+    'REMOTE_ADDR' => '101.226.73.30'
+    'REMOTE_PORT' => '31403'
+    'SERVER_ADDR' => '10.141.78.241'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'admin.123slg.com'
+    'REDIRECT_STATUS' => '200'
+    'PATH_INFO' => ''
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => '*'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'admin.123slg.com'
+    'HTTP_USER_AGENT' => 'DNSPod-Monitor/2.0'
+    'PHP_SELF' => ''
+    'REQUEST_TIME_FLOAT' => 1476707211.1728
+    'REQUEST_TIME' => 1476707211
+]
+2016-10-17 20:27:47 [183.232.90.77][-][-][info][yii\web\Session::open] Session started
+2016-10-17 20:27:47 [183.232.90.77][-][-][info][application] $_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'USER' => 'www'
+    'HOME' => '/home/www'
+    'FCGI_ROLE' => 'RESPONDER'
+    'SCRIPT_FILENAME' => '/data/web/slg123/backend/web/index.php'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/data/web/slg123/backend/web'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.8.0'
+    'REMOTE_ADDR' => '183.232.90.77'
+    'REMOTE_PORT' => '44636'
+    'SERVER_ADDR' => '10.141.78.241'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'admin.123slg.com'
+    'REDIRECT_STATUS' => '200'
+    'PATH_INFO' => ''
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => '*'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'admin.123slg.com'
+    'HTTP_USER_AGENT' => 'DNSPod-Monitor/2.0'
+    'PHP_SELF' => ''
+    'REQUEST_TIME_FLOAT' => 1476707267.1932
+    'REQUEST_TIME' => 1476707267
+]
+2016-10-17 20:28:26 [183.60.5.176][-][-][info][yii\web\Session::open] Session started
+2016-10-17 20:28:26 [183.60.5.176][-][-][info][application] $_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'USER' => 'www'
+    'HOME' => '/home/www'
+    'FCGI_ROLE' => 'RESPONDER'
+    'SCRIPT_FILENAME' => '/data/web/slg123/backend/web/index.php'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/data/web/slg123/backend/web'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.8.0'
+    'REMOTE_ADDR' => '183.60.5.176'
+    'REMOTE_PORT' => '34884'
+    'SERVER_ADDR' => '10.141.78.241'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'admin.123slg.com'
+    'REDIRECT_STATUS' => '200'
+    'PATH_INFO' => ''
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => '*'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'admin.123slg.com'
+    'HTTP_USER_AGENT' => 'DNSPod-Monitor/2.0'
+    'PHP_SELF' => ''
+    'REQUEST_TIME_FLOAT' => 1476707306.9189
+    'REQUEST_TIME' => 1476707306
+]
+2016-10-17 20:29:06 [112.65.192.53][-][-][info][yii\web\Session::open] Session started
+2016-10-17 20:29:06 [112.65.192.53][-][-][info][application] $_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'USER' => 'www'
+    'HOME' => '/home/www'
+    'FCGI_ROLE' => 'RESPONDER'
+    'SCRIPT_FILENAME' => '/data/web/slg123/backend/web/index.php'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/data/web/slg123/backend/web'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.8.0'
+    'REMOTE_ADDR' => '112.65.192.53'
+    'REMOTE_PORT' => '57825'
+    'SERVER_ADDR' => '10.141.78.241'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'admin.123slg.com'
+    'REDIRECT_STATUS' => '200'
+    'PATH_INFO' => ''
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => '*'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'admin.123slg.com'
+    'HTTP_USER_AGENT' => 'DNSPod-Monitor/2.0'
+    'PHP_SELF' => ''
+    'REQUEST_TIME_FLOAT' => 1476707346.5522
+    'REQUEST_TIME' => 1476707346
+]
+2016-10-17 20:29:44 [112.90.141.121][-][-][info][yii\web\Session::open] Session started
+2016-10-17 20:29:44 [112.90.141.121][-][-][info][application] $_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'USER' => 'www'
+    'HOME' => '/home/www'
+    'FCGI_ROLE' => 'RESPONDER'
+    'SCRIPT_FILENAME' => '/data/web/slg123/backend/web/index.php'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/data/web/slg123/backend/web'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.8.0'
+    'REMOTE_ADDR' => '112.90.141.121'
+    'REMOTE_PORT' => '58008'
+    'SERVER_ADDR' => '10.141.78.241'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'admin.123slg.com'
+    'REDIRECT_STATUS' => '200'
+    'PATH_INFO' => ''
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => '*'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'admin.123slg.com'
+    'HTTP_USER_AGENT' => 'DNSPod-Monitor/2.0'
+    'PHP_SELF' => ''
+    'REQUEST_TIME_FLOAT' => 1476707384.211
+    'REQUEST_TIME' => 1476707384
+]
+2016-10-17 20:29:51 [101.226.73.30][-][-][info][yii\web\Session::open] Session started
+2016-10-17 20:29:51 [101.226.73.30][-][-][info][application] $_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'USER' => 'www'
+    'HOME' => '/home/www'
+    'FCGI_ROLE' => 'RESPONDER'
+    'SCRIPT_FILENAME' => '/data/web/slg123/backend/web/index.php'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/data/web/slg123/backend/web'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.8.0'
+    'REMOTE_ADDR' => '101.226.73.30'
+    'REMOTE_PORT' => '22885'
+    'SERVER_ADDR' => '10.141.78.241'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'admin.123slg.com'
+    'REDIRECT_STATUS' => '200'
+    'PATH_INFO' => ''
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => '*'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'admin.123slg.com'
+    'HTTP_USER_AGENT' => 'DNSPod-Monitor/2.0'
+    'PHP_SELF' => ''
+    'REQUEST_TIME_FLOAT' => 1476707391.4309
+    'REQUEST_TIME' => 1476707391
+]
+2016-10-17 20:30:47 [183.232.90.77][-][-][info][yii\web\Session::open] Session started
+2016-10-17 20:30:47 [183.232.90.77][-][-][info][application] $_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'USER' => 'www'
+    'HOME' => '/home/www'
+    'FCGI_ROLE' => 'RESPONDER'
+    'SCRIPT_FILENAME' => '/data/web/slg123/backend/web/index.php'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/data/web/slg123/backend/web'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.8.0'
+    'REMOTE_ADDR' => '183.232.90.77'
+    'REMOTE_PORT' => '56732'
+    'SERVER_ADDR' => '10.141.78.241'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'admin.123slg.com'
+    'REDIRECT_STATUS' => '200'
+    'PATH_INFO' => ''
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => '*'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'admin.123slg.com'
+    'HTTP_USER_AGENT' => 'DNSPod-Monitor/2.0'
+    'PHP_SELF' => ''
+    'REQUEST_TIME_FLOAT' => 1476707447.9004
+    'REQUEST_TIME' => 1476707447
+]
+2016-10-17 20:31:27 [183.60.5.176][-][-][info][yii\web\Session::open] Session started
+2016-10-17 20:31:27 [183.60.5.176][-][-][info][application] $_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'USER' => 'www'
+    'HOME' => '/home/www'
+    'FCGI_ROLE' => 'RESPONDER'
+    'SCRIPT_FILENAME' => '/data/web/slg123/backend/web/index.php'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/data/web/slg123/backend/web'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.8.0'
+    'REMOTE_ADDR' => '183.60.5.176'
+    'REMOTE_PORT' => '22864'
+    'SERVER_ADDR' => '10.141.78.241'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'admin.123slg.com'
+    'REDIRECT_STATUS' => '200'
+    'PATH_INFO' => ''
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => '*'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'admin.123slg.com'
+    'HTTP_USER_AGENT' => 'DNSPod-Monitor/2.0'
+    'PHP_SELF' => ''
+    'REQUEST_TIME_FLOAT' => 1476707487.5421
+    'REQUEST_TIME' => 1476707487
+]
+2016-10-17 20:32:07 [112.65.192.29][-][-][info][yii\web\Session::open] Session started
+2016-10-17 20:32:07 [112.65.192.29][-][-][info][application] $_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'USER' => 'www'
+    'HOME' => '/home/www'
+    'FCGI_ROLE' => 'RESPONDER'
+    'SCRIPT_FILENAME' => '/data/web/slg123/backend/web/index.php'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/data/web/slg123/backend/web'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.8.0'
+    'REMOTE_ADDR' => '112.65.192.29'
+    'REMOTE_PORT' => '52036'
+    'SERVER_ADDR' => '10.141.78.241'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'admin.123slg.com'
+    'REDIRECT_STATUS' => '200'
+    'PATH_INFO' => ''
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => '*'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'admin.123slg.com'
+    'HTTP_USER_AGENT' => 'DNSPod-Monitor/2.0'
+    'PHP_SELF' => ''
+    'REQUEST_TIME_FLOAT' => 1476707527.0906
+    'REQUEST_TIME' => 1476707527
+]
+2016-10-17 20:32:44 [112.90.82.139][-][-][info][yii\web\Session::open] Session started
+2016-10-17 20:32:44 [112.90.82.139][-][-][info][application] $_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'USER' => 'www'
+    'HOME' => '/home/www'
+    'FCGI_ROLE' => 'RESPONDER'
+    'SCRIPT_FILENAME' => '/data/web/slg123/backend/web/index.php'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/data/web/slg123/backend/web'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.8.0'
+    'REMOTE_ADDR' => '112.90.82.139'
+    'REMOTE_PORT' => '30716'
+    'SERVER_ADDR' => '10.141.78.241'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'admin.123slg.com'
+    'REDIRECT_STATUS' => '200'
+    'PATH_INFO' => ''
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => '*'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'admin.123slg.com'
+    'HTTP_USER_AGENT' => 'DNSPod-Monitor/2.0'
+    'PHP_SELF' => ''
+    'REQUEST_TIME_FLOAT' => 1476707564.7613
+    'REQUEST_TIME' => 1476707564
+]
+2016-10-17 20:32:51 [180.153.212.45][-][-][info][yii\web\Session::open] Session started
+2016-10-17 20:32:51 [180.153.212.45][-][-][info][application] $_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'USER' => 'www'
+    'HOME' => '/home/www'
+    'FCGI_ROLE' => 'RESPONDER'
+    'SCRIPT_FILENAME' => '/data/web/slg123/backend/web/index.php'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/data/web/slg123/backend/web'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.8.0'
+    'REMOTE_ADDR' => '180.153.212.45'
+    'REMOTE_PORT' => '32678'
+    'SERVER_ADDR' => '10.141.78.241'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'admin.123slg.com'
+    'REDIRECT_STATUS' => '200'
+    'PATH_INFO' => ''
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => '*'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'admin.123slg.com'
+    'HTTP_USER_AGENT' => 'DNSPod-Monitor/2.0'
+    'PHP_SELF' => ''
+    'REQUEST_TIME_FLOAT' => 1476707571.9628
+    'REQUEST_TIME' => 1476707571
+]
+2016-10-17 20:33:47 [183.232.90.77][-][-][info][yii\web\Session::open] Session started
+2016-10-17 20:33:47 [183.232.90.77][-][-][info][application] $_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'USER' => 'www'
+    'HOME' => '/home/www'
+    'FCGI_ROLE' => 'RESPONDER'
+    'SCRIPT_FILENAME' => '/data/web/slg123/backend/web/index.php'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/data/web/slg123/backend/web'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.8.0'
+    'REMOTE_ADDR' => '183.232.90.77'
+    'REMOTE_PORT' => '50260'
+    'SERVER_ADDR' => '10.141.78.241'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'admin.123slg.com'
+    'REDIRECT_STATUS' => '200'
+    'PATH_INFO' => ''
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => '*'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'admin.123slg.com'
+    'HTTP_USER_AGENT' => 'DNSPod-Monitor/2.0'
+    'PHP_SELF' => ''
+    'REQUEST_TIME_FLOAT' => 1476707627.4277
+    'REQUEST_TIME' => 1476707627
+]
+2016-10-17 20:34:27 [119.147.193.63][-][-][info][yii\web\Session::open] Session started
+2016-10-17 20:34:27 [119.147.193.63][-][-][info][application] $_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'USER' => 'www'
+    'HOME' => '/home/www'
+    'FCGI_ROLE' => 'RESPONDER'
+    'SCRIPT_FILENAME' => '/data/web/slg123/backend/web/index.php'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/data/web/slg123/backend/web'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.8.0'
+    'REMOTE_ADDR' => '119.147.193.63'
+    'REMOTE_PORT' => '59077'
+    'SERVER_ADDR' => '10.141.78.241'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'admin.123slg.com'
+    'REDIRECT_STATUS' => '200'
+    'PATH_INFO' => ''
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => '*'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'admin.123slg.com'
+    'HTTP_USER_AGENT' => 'DNSPod-Monitor/2.0'
+    'PHP_SELF' => ''
+    'REQUEST_TIME_FLOAT' => 1476707667.1384
+    'REQUEST_TIME' => 1476707667
+]
+2016-10-17 20:35:06 [112.65.192.53][-][-][info][yii\web\Session::open] Session started
+2016-10-17 20:35:06 [112.65.192.53][-][-][info][application] $_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'USER' => 'www'
+    'HOME' => '/home/www'
+    'FCGI_ROLE' => 'RESPONDER'
+    'SCRIPT_FILENAME' => '/data/web/slg123/backend/web/index.php'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/data/web/slg123/backend/web'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.8.0'
+    'REMOTE_ADDR' => '112.65.192.53'
+    'REMOTE_PORT' => '48867'
+    'SERVER_ADDR' => '10.141.78.241'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'admin.123slg.com'
+    'REDIRECT_STATUS' => '200'
+    'PATH_INFO' => ''
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => '*'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'admin.123slg.com'
+    'HTTP_USER_AGENT' => 'DNSPod-Monitor/2.0'
+    'PHP_SELF' => ''
+    'REQUEST_TIME_FLOAT' => 1476707706.7523
+    'REQUEST_TIME' => 1476707706
+]
+2016-10-17 20:35:44 [112.90.141.121][-][-][info][yii\web\Session::open] Session started
+2016-10-17 20:35:44 [112.90.141.121][-][-][info][application] $_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'USER' => 'www'
+    'HOME' => '/home/www'
+    'FCGI_ROLE' => 'RESPONDER'
+    'SCRIPT_FILENAME' => '/data/web/slg123/backend/web/index.php'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/data/web/slg123/backend/web'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.8.0'
+    'REMOTE_ADDR' => '112.90.141.121'
+    'REMOTE_PORT' => '52208'
+    'SERVER_ADDR' => '10.141.78.241'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'admin.123slg.com'
+    'REDIRECT_STATUS' => '200'
+    'PATH_INFO' => ''
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => '*'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'admin.123slg.com'
+    'HTTP_USER_AGENT' => 'DNSPod-Monitor/2.0'
+    'PHP_SELF' => ''
+    'REQUEST_TIME_FLOAT' => 1476707744.4256
+    'REQUEST_TIME' => 1476707744
+]
+2016-10-17 20:35:51 [180.153.81.158][-][-][info][yii\web\Session::open] Session started
+2016-10-17 20:35:51 [180.153.81.158][-][-][info][application] $_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'USER' => 'www'
+    'HOME' => '/home/www'
+    'FCGI_ROLE' => 'RESPONDER'
+    'SCRIPT_FILENAME' => '/data/web/slg123/backend/web/index.php'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/data/web/slg123/backend/web'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.8.0'
+    'REMOTE_ADDR' => '180.153.81.158'
+    'REMOTE_PORT' => '58556'
+    'SERVER_ADDR' => '10.141.78.241'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'admin.123slg.com'
+    'REDIRECT_STATUS' => '200'
+    'PATH_INFO' => ''
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => '*'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'admin.123slg.com'
+    'HTTP_USER_AGENT' => 'DNSPod-Monitor/2.0'
+    'PHP_SELF' => ''
+    'REQUEST_TIME_FLOAT' => 1476707751.6193
+    'REQUEST_TIME' => 1476707751
+]
+2016-10-17 20:36:48 [183.232.90.77][-][-][info][yii\web\Session::open] Session started
+2016-10-17 20:36:48 [183.232.90.77][-][-][info][application] $_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'USER' => 'www'
+    'HOME' => '/home/www'
+    'FCGI_ROLE' => 'RESPONDER'
+    'SCRIPT_FILENAME' => '/data/web/slg123/backend/web/index.php'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/data/web/slg123/backend/web'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.8.0'
+    'REMOTE_ADDR' => '183.232.90.77'
+    'REMOTE_PORT' => '56564'
+    'SERVER_ADDR' => '10.141.78.241'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'admin.123slg.com'
+    'REDIRECT_STATUS' => '200'
+    'PATH_INFO' => ''
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => '*'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'admin.123slg.com'
+    'HTTP_USER_AGENT' => 'DNSPod-Monitor/2.0'
+    'PHP_SELF' => ''
+    'REQUEST_TIME_FLOAT' => 1476707808.0629
+    'REQUEST_TIME' => 1476707808
+]
+2016-10-17 20:37:27 [183.60.5.176][-][-][info][yii\web\Session::open] Session started
+2016-10-17 20:37:27 [183.60.5.176][-][-][info][application] $_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'USER' => 'www'
+    'HOME' => '/home/www'
+    'FCGI_ROLE' => 'RESPONDER'
+    'SCRIPT_FILENAME' => '/data/web/slg123/backend/web/index.php'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/data/web/slg123/backend/web'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.8.0'
+    'REMOTE_ADDR' => '183.60.5.176'
+    'REMOTE_PORT' => '51050'
+    'SERVER_ADDR' => '10.141.78.241'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'admin.123slg.com'
+    'REDIRECT_STATUS' => '200'
+    'PATH_INFO' => ''
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => '*'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'admin.123slg.com'
+    'HTTP_USER_AGENT' => 'DNSPod-Monitor/2.0'
+    'PHP_SELF' => ''
+    'REQUEST_TIME_FLOAT' => 1476707847.7251
+    'REQUEST_TIME' => 1476707847
+]
+2016-10-17 20:38:07 [112.65.192.29][-][-][info][yii\web\Session::open] Session started
+2016-10-17 20:38:07 [112.65.192.29][-][-][info][application] $_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'USER' => 'www'
+    'HOME' => '/home/www'
+    'FCGI_ROLE' => 'RESPONDER'
+    'SCRIPT_FILENAME' => '/data/web/slg123/backend/web/index.php'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/data/web/slg123/backend/web'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.8.0'
+    'REMOTE_ADDR' => '112.65.192.29'
+    'REMOTE_PORT' => '53738'
+    'SERVER_ADDR' => '10.141.78.241'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'admin.123slg.com'
+    'REDIRECT_STATUS' => '200'
+    'PATH_INFO' => ''
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => '*'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'admin.123slg.com'
+    'HTTP_USER_AGENT' => 'DNSPod-Monitor/2.0'
+    'PHP_SELF' => ''
+    'REQUEST_TIME_FLOAT' => 1476707887.3173
+    'REQUEST_TIME' => 1476707887
+]
+2016-10-17 20:38:45 [112.90.82.139][-][-][info][yii\web\Session::open] Session started
+2016-10-17 20:38:45 [112.90.82.139][-][-][info][application] $_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'USER' => 'www'
+    'HOME' => '/home/www'
+    'FCGI_ROLE' => 'RESPONDER'
+    'SCRIPT_FILENAME' => '/data/web/slg123/backend/web/index.php'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/data/web/slg123/backend/web'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.8.0'
+    'REMOTE_ADDR' => '112.90.82.139'
+    'REMOTE_PORT' => '58723'
+    'SERVER_ADDR' => '10.141.78.241'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'admin.123slg.com'
+    'REDIRECT_STATUS' => '200'
+    'PATH_INFO' => ''
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => '*'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'admin.123slg.com'
+    'HTTP_USER_AGENT' => 'DNSPod-Monitor/2.0'
+    'PHP_SELF' => ''
+    'REQUEST_TIME_FLOAT' => 1476707925.0041
+    'REQUEST_TIME' => 1476707925
+]
+2016-10-17 20:38:52 [180.153.212.45][-][-][info][yii\web\Session::open] Session started
+2016-10-17 20:38:52 [180.153.212.45][-][-][info][application] $_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'USER' => 'www'
+    'HOME' => '/home/www'
+    'FCGI_ROLE' => 'RESPONDER'
+    'SCRIPT_FILENAME' => '/data/web/slg123/backend/web/index.php'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/data/web/slg123/backend/web'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.8.0'
+    'REMOTE_ADDR' => '180.153.212.45'
+    'REMOTE_PORT' => '34551'
+    'SERVER_ADDR' => '10.141.78.241'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'admin.123slg.com'
+    'REDIRECT_STATUS' => '200'
+    'PATH_INFO' => ''
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => '*'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'admin.123slg.com'
+    'HTTP_USER_AGENT' => 'DNSPod-Monitor/2.0'
+    'PHP_SELF' => ''
+    'REQUEST_TIME_FLOAT' => 1476707932.1975
+    'REQUEST_TIME' => 1476707932
+]
+2016-10-17 20:39:47 [183.232.90.142][-][-][info][yii\web\Session::open] Session started
+2016-10-17 20:39:47 [183.232.90.142][-][-][info][application] $_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'USER' => 'www'
+    'HOME' => '/home/www'
+    'FCGI_ROLE' => 'RESPONDER'
+    'SCRIPT_FILENAME' => '/data/web/slg123/backend/web/index.php'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/data/web/slg123/backend/web'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.8.0'
+    'REMOTE_ADDR' => '183.232.90.142'
+    'REMOTE_PORT' => '52263'
+    'SERVER_ADDR' => '10.141.78.241'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'admin.123slg.com'
+    'REDIRECT_STATUS' => '200'
+    'PATH_INFO' => ''
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => '*'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'admin.123slg.com'
+    'HTTP_USER_AGENT' => 'DNSPod-Monitor/2.0'
+    'PHP_SELF' => ''
+    'REQUEST_TIME_FLOAT' => 1476707987.6589
+    'REQUEST_TIME' => 1476707987
+]
+2016-10-17 20:40:27 [119.147.193.63][-][-][info][yii\web\Session::open] Session started
+2016-10-17 20:40:27 [119.147.193.63][-][-][info][application] $_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'USER' => 'www'
+    'HOME' => '/home/www'
+    'FCGI_ROLE' => 'RESPONDER'
+    'SCRIPT_FILENAME' => '/data/web/slg123/backend/web/index.php'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/data/web/slg123/backend/web'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.8.0'
+    'REMOTE_ADDR' => '119.147.193.63'
+    'REMOTE_PORT' => '24380'
+    'SERVER_ADDR' => '10.141.78.241'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'admin.123slg.com'
+    'REDIRECT_STATUS' => '200'
+    'PATH_INFO' => ''
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => '*'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'admin.123slg.com'
+    'HTTP_USER_AGENT' => 'DNSPod-Monitor/2.0'
+    'PHP_SELF' => ''
+    'REQUEST_TIME_FLOAT' => 1476708027.3693
+    'REQUEST_TIME' => 1476708027
+]
+2016-10-17 20:41:06 [140.207.189.165][-][-][info][yii\web\Session::open] Session started
+2016-10-17 20:41:06 [140.207.189.165][-][-][info][application] $_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'USER' => 'www'
+    'HOME' => '/home/www'
+    'FCGI_ROLE' => 'RESPONDER'
+    'SCRIPT_FILENAME' => '/data/web/slg123/backend/web/index.php'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/data/web/slg123/backend/web'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.8.0'
+    'REMOTE_ADDR' => '140.207.189.165'
+    'REMOTE_PORT' => '46416'
+    'SERVER_ADDR' => '10.141.78.241'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'admin.123slg.com'
+    'REDIRECT_STATUS' => '200'
+    'PATH_INFO' => ''
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => '*'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'admin.123slg.com'
+    'HTTP_USER_AGENT' => 'DNSPod-Monitor/2.0'
+    'PHP_SELF' => ''
+    'REQUEST_TIME_FLOAT' => 1476708066.9733
+    'REQUEST_TIME' => 1476708066
+]
+2016-10-17 20:41:44 [112.90.82.164][-][-][info][yii\web\Session::open] Session started
+2016-10-17 20:41:44 [112.90.82.164][-][-][info][application] $_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'USER' => 'www'
+    'HOME' => '/home/www'
+    'FCGI_ROLE' => 'RESPONDER'
+    'SCRIPT_FILENAME' => '/data/web/slg123/backend/web/index.php'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/data/web/slg123/backend/web'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.8.0'
+    'REMOTE_ADDR' => '112.90.82.164'
+    'REMOTE_PORT' => '34186'
+    'SERVER_ADDR' => '10.141.78.241'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'admin.123slg.com'
+    'REDIRECT_STATUS' => '200'
+    'PATH_INFO' => ''
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => '*'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'admin.123slg.com'
+    'HTTP_USER_AGENT' => 'DNSPod-Monitor/2.0'
+    'PHP_SELF' => ''
+    'REQUEST_TIME_FLOAT' => 1476708104.6561
+    'REQUEST_TIME' => 1476708104
+]
+2016-10-17 20:41:51 [101.226.73.30][-][-][info][yii\web\Session::open] Session started
+2016-10-17 20:41:51 [101.226.73.30][-][-][info][application] $_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'USER' => 'www'
+    'HOME' => '/home/www'
+    'FCGI_ROLE' => 'RESPONDER'
+    'SCRIPT_FILENAME' => '/data/web/slg123/backend/web/index.php'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/data/web/slg123/backend/web'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.8.0'
+    'REMOTE_ADDR' => '101.226.73.30'
+    'REMOTE_PORT' => '45023'
+    'SERVER_ADDR' => '10.141.78.241'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'admin.123slg.com'
+    'REDIRECT_STATUS' => '200'
+    'PATH_INFO' => ''
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => '*'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'admin.123slg.com'
+    'HTTP_USER_AGENT' => 'DNSPod-Monitor/2.0'
+    'PHP_SELF' => ''
+    'REQUEST_TIME_FLOAT' => 1476708111.8422
+    'REQUEST_TIME' => 1476708111
+]
+2016-10-17 20:42:48 [183.232.90.77][-][-][info][yii\web\Session::open] Session started
+2016-10-17 20:42:48 [183.232.90.77][-][-][info][application] $_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'USER' => 'www'
+    'HOME' => '/home/www'
+    'FCGI_ROLE' => 'RESPONDER'
+    'SCRIPT_FILENAME' => '/data/web/slg123/backend/web/index.php'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/data/web/slg123/backend/web'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.8.0'
+    'REMOTE_ADDR' => '183.232.90.77'
+    'REMOTE_PORT' => '42717'
+    'SERVER_ADDR' => '10.141.78.241'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'admin.123slg.com'
+    'REDIRECT_STATUS' => '200'
+    'PATH_INFO' => ''
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => '*'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'admin.123slg.com'
+    'HTTP_USER_AGENT' => 'DNSPod-Monitor/2.0'
+    'PHP_SELF' => ''
+    'REQUEST_TIME_FLOAT' => 1476708168.3092
+    'REQUEST_TIME' => 1476708168
+]
+2016-10-17 20:43:27 [183.60.5.176][-][-][info][yii\web\Session::open] Session started
+2016-10-17 20:43:27 [183.60.5.176][-][-][info][application] $_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'USER' => 'www'
+    'HOME' => '/home/www'
+    'FCGI_ROLE' => 'RESPONDER'
+    'SCRIPT_FILENAME' => '/data/web/slg123/backend/web/index.php'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/data/web/slg123/backend/web'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.8.0'
+    'REMOTE_ADDR' => '183.60.5.176'
+    'REMOTE_PORT' => '36516'
+    'SERVER_ADDR' => '10.141.78.241'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'admin.123slg.com'
+    'REDIRECT_STATUS' => '200'
+    'PATH_INFO' => ''
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => '*'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'admin.123slg.com'
+    'HTTP_USER_AGENT' => 'DNSPod-Monitor/2.0'
+    'PHP_SELF' => ''
+    'REQUEST_TIME_FLOAT' => 1476708207.9879
+    'REQUEST_TIME' => 1476708207
+]
+2016-10-17 20:44:07 [112.65.192.29][-][-][info][yii\web\Session::open] Session started
+2016-10-17 20:44:07 [112.65.192.29][-][-][info][application] $_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'USER' => 'www'
+    'HOME' => '/home/www'
+    'FCGI_ROLE' => 'RESPONDER'
+    'SCRIPT_FILENAME' => '/data/web/slg123/backend/web/index.php'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/data/web/slg123/backend/web'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.8.0'
+    'REMOTE_ADDR' => '112.65.192.29'
+    'REMOTE_PORT' => '58745'
+    'SERVER_ADDR' => '10.141.78.241'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'admin.123slg.com'
+    'REDIRECT_STATUS' => '200'
+    'PATH_INFO' => ''
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => '*'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'admin.123slg.com'
+    'HTTP_USER_AGENT' => 'DNSPod-Monitor/2.0'
+    'PHP_SELF' => ''
+    'REQUEST_TIME_FLOAT' => 1476708247.5304
+    'REQUEST_TIME' => 1476708247
+]
+2016-10-17 20:44:45 [112.90.82.164][-][-][info][yii\web\Session::open] Session started
+2016-10-17 20:44:45 [112.90.82.164][-][-][info][application] $_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'USER' => 'www'
+    'HOME' => '/home/www'
+    'FCGI_ROLE' => 'RESPONDER'
+    'SCRIPT_FILENAME' => '/data/web/slg123/backend/web/index.php'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/data/web/slg123/backend/web'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.8.0'
+    'REMOTE_ADDR' => '112.90.82.164'
+    'REMOTE_PORT' => '44764'
+    'SERVER_ADDR' => '10.141.78.241'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'admin.123slg.com'
+    'REDIRECT_STATUS' => '200'
+    'PATH_INFO' => ''
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => '*'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'admin.123slg.com'
+    'HTTP_USER_AGENT' => 'DNSPod-Monitor/2.0'
+    'PHP_SELF' => ''
+    'REQUEST_TIME_FLOAT' => 1476708285.1796
+    'REQUEST_TIME' => 1476708285
+]
+2016-10-17 20:44:52 [101.226.73.30][-][-][info][yii\web\Session::open] Session started
+2016-10-17 20:44:52 [101.226.73.30][-][-][info][application] $_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'USER' => 'www'
+    'HOME' => '/home/www'
+    'FCGI_ROLE' => 'RESPONDER'
+    'SCRIPT_FILENAME' => '/data/web/slg123/backend/web/index.php'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/data/web/slg123/backend/web'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.8.0'
+    'REMOTE_ADDR' => '101.226.73.30'
+    'REMOTE_PORT' => '43077'
+    'SERVER_ADDR' => '10.141.78.241'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'admin.123slg.com'
+    'REDIRECT_STATUS' => '200'
+    'PATH_INFO' => ''
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => '*'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'admin.123slg.com'
+    'HTTP_USER_AGENT' => 'DNSPod-Monitor/2.0'
+    'PHP_SELF' => ''
+    'REQUEST_TIME_FLOAT' => 1476708292.3866
+    'REQUEST_TIME' => 1476708292
+]
+2016-10-17 20:45:47 [183.232.90.77][-][-][info][yii\web\Session::open] Session started
+2016-10-17 20:45:47 [183.232.90.77][-][-][info][application] $_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'USER' => 'www'
+    'HOME' => '/home/www'
+    'FCGI_ROLE' => 'RESPONDER'
+    'SCRIPT_FILENAME' => '/data/web/slg123/backend/web/index.php'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/data/web/slg123/backend/web'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.8.0'
+    'REMOTE_ADDR' => '183.232.90.77'
+    'REMOTE_PORT' => '41063'
+    'SERVER_ADDR' => '10.141.78.241'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'admin.123slg.com'
+    'REDIRECT_STATUS' => '200'
+    'PATH_INFO' => ''
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => '*'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'admin.123slg.com'
+    'HTTP_USER_AGENT' => 'DNSPod-Monitor/2.0'
+    'PHP_SELF' => ''
+    'REQUEST_TIME_FLOAT' => 1476708347.8953
+    'REQUEST_TIME' => 1476708347
+]
+2016-10-17 20:46:27 [183.60.5.176][-][-][info][yii\web\Session::open] Session started
+2016-10-17 20:46:27 [183.60.5.176][-][-][info][application] $_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'USER' => 'www'
+    'HOME' => '/home/www'
+    'FCGI_ROLE' => 'RESPONDER'
+    'SCRIPT_FILENAME' => '/data/web/slg123/backend/web/index.php'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/data/web/slg123/backend/web'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.8.0'
+    'REMOTE_ADDR' => '183.60.5.176'
+    'REMOTE_PORT' => '35550'
+    'SERVER_ADDR' => '10.141.78.241'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'admin.123slg.com'
+    'REDIRECT_STATUS' => '200'
+    'PATH_INFO' => ''
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => '*'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'admin.123slg.com'
+    'HTTP_USER_AGENT' => 'DNSPod-Monitor/2.0'
+    'PHP_SELF' => ''
+    'REQUEST_TIME_FLOAT' => 1476708387.5683
+    'REQUEST_TIME' => 1476708387
+]
+2016-10-17 20:47:07 [112.65.192.29][-][-][info][yii\web\Session::open] Session started
+2016-10-17 20:47:07 [112.65.192.29][-][-][info][application] $_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'USER' => 'www'
+    'HOME' => '/home/www'
+    'FCGI_ROLE' => 'RESPONDER'
+    'SCRIPT_FILENAME' => '/data/web/slg123/backend/web/index.php'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/data/web/slg123/backend/web'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.8.0'
+    'REMOTE_ADDR' => '112.65.192.29'
+    'REMOTE_PORT' => '48966'
+    'SERVER_ADDR' => '10.141.78.241'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'admin.123slg.com'
+    'REDIRECT_STATUS' => '200'
+    'PATH_INFO' => ''
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => '*'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'admin.123slg.com'
+    'HTTP_USER_AGENT' => 'DNSPod-Monitor/2.0'
+    'PHP_SELF' => ''
+    'REQUEST_TIME_FLOAT' => 1476708427.1909
+    'REQUEST_TIME' => 1476708427
+]
+2016-10-17 20:47:44 [112.90.82.139][-][-][info][yii\web\Session::open] Session started
+2016-10-17 20:47:44 [112.90.82.139][-][-][info][application] $_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'USER' => 'www'
+    'HOME' => '/home/www'
+    'FCGI_ROLE' => 'RESPONDER'
+    'SCRIPT_FILENAME' => '/data/web/slg123/backend/web/index.php'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/data/web/slg123/backend/web'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.8.0'
+    'REMOTE_ADDR' => '112.90.82.139'
+    'REMOTE_PORT' => '41871'
+    'SERVER_ADDR' => '10.141.78.241'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'admin.123slg.com'
+    'REDIRECT_STATUS' => '200'
+    'PATH_INFO' => ''
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => '*'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'admin.123slg.com'
+    'HTTP_USER_AGENT' => 'DNSPod-Monitor/2.0'
+    'PHP_SELF' => ''
+    'REQUEST_TIME_FLOAT' => 1476708464.8855
+    'REQUEST_TIME' => 1476708464
+]
+2016-10-17 20:47:52 [180.153.212.45][-][-][info][yii\web\Session::open] Session started
+2016-10-17 20:47:52 [180.153.212.45][-][-][info][application] $_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'USER' => 'www'
+    'HOME' => '/home/www'
+    'FCGI_ROLE' => 'RESPONDER'
+    'SCRIPT_FILENAME' => '/data/web/slg123/backend/web/index.php'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/data/web/slg123/backend/web'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.8.0'
+    'REMOTE_ADDR' => '180.153.212.45'
+    'REMOTE_PORT' => '50512'
+    'SERVER_ADDR' => '10.141.78.241'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'admin.123slg.com'
+    'REDIRECT_STATUS' => '200'
+    'PATH_INFO' => ''
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => '*'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'admin.123slg.com'
+    'HTTP_USER_AGENT' => 'DNSPod-Monitor/2.0'
+    'PHP_SELF' => ''
+    'REQUEST_TIME_FLOAT' => 1476708472.1132
+    'REQUEST_TIME' => 1476708472
+]
+2016-10-17 20:48:48 [183.232.90.142][-][-][info][yii\web\Session::open] Session started
+2016-10-17 20:48:48 [183.232.90.142][-][-][info][application] $_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'USER' => 'www'
+    'HOME' => '/home/www'
+    'FCGI_ROLE' => 'RESPONDER'
+    'SCRIPT_FILENAME' => '/data/web/slg123/backend/web/index.php'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/data/web/slg123/backend/web'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.8.0'
+    'REMOTE_ADDR' => '183.232.90.142'
+    'REMOTE_PORT' => '37694'
+    'SERVER_ADDR' => '10.141.78.241'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'admin.123slg.com'
+    'REDIRECT_STATUS' => '200'
+    'PATH_INFO' => ''
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => '*'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'admin.123slg.com'
+    'HTTP_USER_AGENT' => 'DNSPod-Monitor/2.0'
+    'PHP_SELF' => ''
+    'REQUEST_TIME_FLOAT' => 1476708528.5916
+    'REQUEST_TIME' => 1476708528
+]
+2016-10-17 20:49:28 [119.147.193.63][-][-][info][yii\web\Session::open] Session started
+2016-10-17 20:49:28 [119.147.193.63][-][-][info][application] $_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'USER' => 'www'
+    'HOME' => '/home/www'
+    'FCGI_ROLE' => 'RESPONDER'
+    'SCRIPT_FILENAME' => '/data/web/slg123/backend/web/index.php'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/data/web/slg123/backend/web'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.8.0'
+    'REMOTE_ADDR' => '119.147.193.63'
+    'REMOTE_PORT' => '31831'
+    'SERVER_ADDR' => '10.141.78.241'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'admin.123slg.com'
+    'REDIRECT_STATUS' => '200'
+    'PATH_INFO' => ''
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => '*'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'admin.123slg.com'
+    'HTTP_USER_AGENT' => 'DNSPod-Monitor/2.0'
+    'PHP_SELF' => ''
+    'REQUEST_TIME_FLOAT' => 1476708568.2658
+    'REQUEST_TIME' => 1476708568
+]
+2016-10-17 20:50:07 [112.65.192.29][-][-][info][yii\web\Session::open] Session started
+2016-10-17 20:50:07 [112.65.192.29][-][-][info][application] $_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'USER' => 'www'
+    'HOME' => '/home/www'
+    'FCGI_ROLE' => 'RESPONDER'
+    'SCRIPT_FILENAME' => '/data/web/slg123/backend/web/index.php'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/data/web/slg123/backend/web'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.8.0'
+    'REMOTE_ADDR' => '112.65.192.29'
+    'REMOTE_PORT' => '53690'
+    'SERVER_ADDR' => '10.141.78.241'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'admin.123slg.com'
+    'REDIRECT_STATUS' => '200'
+    'PATH_INFO' => ''
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => '*'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'admin.123slg.com'
+    'HTTP_USER_AGENT' => 'DNSPod-Monitor/2.0'
+    'PHP_SELF' => ''
+    'REQUEST_TIME_FLOAT' => 1476708607.8183
+    'REQUEST_TIME' => 1476708607
+]
+2016-10-17 20:50:45 [112.90.82.139][-][-][info][yii\web\Session::open] Session started
+2016-10-17 20:50:45 [112.90.82.139][-][-][info][application] $_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'USER' => 'www'
+    'HOME' => '/home/www'
+    'FCGI_ROLE' => 'RESPONDER'
+    'SCRIPT_FILENAME' => '/data/web/slg123/backend/web/index.php'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/data/web/slg123/backend/web'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.8.0'
+    'REMOTE_ADDR' => '112.90.82.139'
+    'REMOTE_PORT' => '30503'
+    'SERVER_ADDR' => '10.141.78.241'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'admin.123slg.com'
+    'REDIRECT_STATUS' => '200'
+    'PATH_INFO' => ''
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => '*'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'admin.123slg.com'
+    'HTTP_USER_AGENT' => 'DNSPod-Monitor/2.0'
+    'PHP_SELF' => ''
+    'REQUEST_TIME_FLOAT' => 1476708645.4859
+    'REQUEST_TIME' => 1476708645
+]
+2016-10-17 20:50:52 [180.153.81.158][-][-][info][yii\web\Session::open] Session started
+2016-10-17 20:50:52 [180.153.81.158][-][-][info][application] $_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'USER' => 'www'
+    'HOME' => '/home/www'
+    'FCGI_ROLE' => 'RESPONDER'
+    'SCRIPT_FILENAME' => '/data/web/slg123/backend/web/index.php'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/data/web/slg123/backend/web'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.8.0'
+    'REMOTE_ADDR' => '180.153.81.158'
+    'REMOTE_PORT' => '38699'
+    'SERVER_ADDR' => '10.141.78.241'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'admin.123slg.com'
+    'REDIRECT_STATUS' => '200'
+    'PATH_INFO' => ''
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => '*'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'admin.123slg.com'
+    'HTTP_USER_AGENT' => 'DNSPod-Monitor/2.0'
+    'PHP_SELF' => ''
+    'REQUEST_TIME_FLOAT' => 1476708652.684
+    'REQUEST_TIME' => 1476708652
+]
+2016-10-17 20:51:48 [183.232.90.142][-][-][info][yii\web\Session::open] Session started
+2016-10-17 20:51:48 [183.232.90.142][-][-][info][application] $_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'USER' => 'www'
+    'HOME' => '/home/www'
+    'FCGI_ROLE' => 'RESPONDER'
+    'SCRIPT_FILENAME' => '/data/web/slg123/backend/web/index.php'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/data/web/slg123/backend/web'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.8.0'
+    'REMOTE_ADDR' => '183.232.90.142'
+    'REMOTE_PORT' => '51469'
+    'SERVER_ADDR' => '10.141.78.241'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'admin.123slg.com'
+    'REDIRECT_STATUS' => '200'
+    'PATH_INFO' => ''
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => '*'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'admin.123slg.com'
+    'HTTP_USER_AGENT' => 'DNSPod-Monitor/2.0'
+    'PHP_SELF' => ''
+    'REQUEST_TIME_FLOAT' => 1476708708.1675
+    'REQUEST_TIME' => 1476708708
+]
+2016-10-17 20:52:27 [183.60.5.176][-][-][info][yii\web\Session::open] Session started
+2016-10-17 20:52:27 [183.60.5.176][-][-][info][application] $_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'USER' => 'www'
+    'HOME' => '/home/www'
+    'FCGI_ROLE' => 'RESPONDER'
+    'SCRIPT_FILENAME' => '/data/web/slg123/backend/web/index.php'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/data/web/slg123/backend/web'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.8.0'
+    'REMOTE_ADDR' => '183.60.5.176'
+    'REMOTE_PORT' => '33083'
+    'SERVER_ADDR' => '10.141.78.241'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'admin.123slg.com'
+    'REDIRECT_STATUS' => '200'
+    'PATH_INFO' => ''
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => '*'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'admin.123slg.com'
+    'HTTP_USER_AGENT' => 'DNSPod-Monitor/2.0'
+    'PHP_SELF' => ''
+    'REQUEST_TIME_FLOAT' => 1476708747.8681
+    'REQUEST_TIME' => 1476708747
+]
+2016-10-17 20:53:07 [140.207.189.165][-][-][info][yii\web\Session::open] Session started
+2016-10-17 20:53:07 [140.207.189.165][-][-][info][application] $_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'USER' => 'www'
+    'HOME' => '/home/www'
+    'FCGI_ROLE' => 'RESPONDER'
+    'SCRIPT_FILENAME' => '/data/web/slg123/backend/web/index.php'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/data/web/slg123/backend/web'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.8.0'
+    'REMOTE_ADDR' => '140.207.189.165'
+    'REMOTE_PORT' => '34120'
+    'SERVER_ADDR' => '10.141.78.241'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'admin.123slg.com'
+    'REDIRECT_STATUS' => '200'
+    'PATH_INFO' => ''
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => '*'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'admin.123slg.com'
+    'HTTP_USER_AGENT' => 'DNSPod-Monitor/2.0'
+    'PHP_SELF' => ''
+    'REQUEST_TIME_FLOAT' => 1476708787.4927
+    'REQUEST_TIME' => 1476708787
+]
+2016-10-17 20:53:45 [112.90.141.121][-][-][info][yii\web\Session::open] Session started
+2016-10-17 20:53:45 [112.90.141.121][-][-][info][application] $_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'USER' => 'www'
+    'HOME' => '/home/www'
+    'FCGI_ROLE' => 'RESPONDER'
+    'SCRIPT_FILENAME' => '/data/web/slg123/backend/web/index.php'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/data/web/slg123/backend/web'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.8.0'
+    'REMOTE_ADDR' => '112.90.141.121'
+    'REMOTE_PORT' => '24987'
+    'SERVER_ADDR' => '10.141.78.241'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'admin.123slg.com'
+    'REDIRECT_STATUS' => '200'
+    'PATH_INFO' => ''
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => '*'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'admin.123slg.com'
+    'HTTP_USER_AGENT' => 'DNSPod-Monitor/2.0'
+    'PHP_SELF' => ''
+    'REQUEST_TIME_FLOAT' => 1476708825.1727
+    'REQUEST_TIME' => 1476708825
+]
+2016-10-17 20:53:52 [180.153.212.45][-][-][info][yii\web\Session::open] Session started
+2016-10-17 20:53:52 [180.153.212.45][-][-][info][application] $_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'USER' => 'www'
+    'HOME' => '/home/www'
+    'FCGI_ROLE' => 'RESPONDER'
+    'SCRIPT_FILENAME' => '/data/web/slg123/backend/web/index.php'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/data/web/slg123/backend/web'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.8.0'
+    'REMOTE_ADDR' => '180.153.212.45'
+    'REMOTE_PORT' => '35713'
+    'SERVER_ADDR' => '10.141.78.241'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'admin.123slg.com'
+    'REDIRECT_STATUS' => '200'
+    'PATH_INFO' => ''
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => '*'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'admin.123slg.com'
+    'HTTP_USER_AGENT' => 'DNSPod-Monitor/2.0'
+    'PHP_SELF' => ''
+    'REQUEST_TIME_FLOAT' => 1476708832.4036
+    'REQUEST_TIME' => 1476708832
+]
+2016-10-17 20:54:47 [183.232.90.142][-][-][info][yii\web\Session::open] Session started
+2016-10-17 20:54:47 [183.232.90.142][-][-][info][application] $_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'USER' => 'www'
+    'HOME' => '/home/www'
+    'FCGI_ROLE' => 'RESPONDER'
+    'SCRIPT_FILENAME' => '/data/web/slg123/backend/web/index.php'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/data/web/slg123/backend/web'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.8.0'
+    'REMOTE_ADDR' => '183.232.90.142'
+    'REMOTE_PORT' => '44522'
+    'SERVER_ADDR' => '10.141.78.241'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'admin.123slg.com'
+    'REDIRECT_STATUS' => '200'
+    'PATH_INFO' => ''
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => '*'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'admin.123slg.com'
+    'HTTP_USER_AGENT' => 'DNSPod-Monitor/2.0'
+    'PHP_SELF' => ''
+    'REQUEST_TIME_FLOAT' => 1476708887.8195
+    'REQUEST_TIME' => 1476708887
+]
+2016-10-17 20:55:27 [183.60.5.176][-][-][info][yii\web\Session::open] Session started
+2016-10-17 20:55:27 [183.60.5.176][-][-][info][application] $_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'USER' => 'www'
+    'HOME' => '/home/www'
+    'FCGI_ROLE' => 'RESPONDER'
+    'SCRIPT_FILENAME' => '/data/web/slg123/backend/web/index.php'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/data/web/slg123/backend/web'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.8.0'
+    'REMOTE_ADDR' => '183.60.5.176'
+    'REMOTE_PORT' => '41240'
+    'SERVER_ADDR' => '10.141.78.241'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'admin.123slg.com'
+    'REDIRECT_STATUS' => '200'
+    'PATH_INFO' => ''
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => '*'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'admin.123slg.com'
+    'HTTP_USER_AGENT' => 'DNSPod-Monitor/2.0'
+    'PHP_SELF' => ''
+    'REQUEST_TIME_FLOAT' => 1476708927.491
+    'REQUEST_TIME' => 1476708927
+]
+2016-10-17 20:56:07 [112.65.192.53][-][-][info][yii\web\Session::open] Session started
+2016-10-17 20:56:07 [112.65.192.53][-][-][info][application] $_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'USER' => 'www'
+    'HOME' => '/home/www'
+    'FCGI_ROLE' => 'RESPONDER'
+    'SCRIPT_FILENAME' => '/data/web/slg123/backend/web/index.php'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/data/web/slg123/backend/web'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.8.0'
+    'REMOTE_ADDR' => '112.65.192.53'
+    'REMOTE_PORT' => '49897'
+    'SERVER_ADDR' => '10.141.78.241'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'admin.123slg.com'
+    'REDIRECT_STATUS' => '200'
+    'PATH_INFO' => ''
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => '*'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'admin.123slg.com'
+    'HTTP_USER_AGENT' => 'DNSPod-Monitor/2.0'
+    'PHP_SELF' => ''
+    'REQUEST_TIME_FLOAT' => 1476708967.0373
+    'REQUEST_TIME' => 1476708967
+]
+2016-10-17 20:56:44 [112.90.141.121][-][-][info][yii\web\Session::open] Session started
+2016-10-17 20:56:44 [112.90.141.121][-][-][info][application] $_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'USER' => 'www'
+    'HOME' => '/home/www'
+    'FCGI_ROLE' => 'RESPONDER'
+    'SCRIPT_FILENAME' => '/data/web/slg123/backend/web/index.php'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/data/web/slg123/backend/web'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.8.0'
+    'REMOTE_ADDR' => '112.90.141.121'
+    'REMOTE_PORT' => '32832'
+    'SERVER_ADDR' => '10.141.78.241'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'admin.123slg.com'
+    'REDIRECT_STATUS' => '200'
+    'PATH_INFO' => ''
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => '*'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'admin.123slg.com'
+    'HTTP_USER_AGENT' => 'DNSPod-Monitor/2.0'
+    'PHP_SELF' => ''
+    'REQUEST_TIME_FLOAT' => 1476709004.718
+    'REQUEST_TIME' => 1476709004
+]
+2016-10-17 20:56:51 [101.226.73.30][-][-][info][yii\web\Session::open] Session started
+2016-10-17 20:56:51 [101.226.73.30][-][-][info][application] $_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'USER' => 'www'
+    'HOME' => '/home/www'
+    'FCGI_ROLE' => 'RESPONDER'
+    'SCRIPT_FILENAME' => '/data/web/slg123/backend/web/index.php'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/data/web/slg123/backend/web'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.8.0'
+    'REMOTE_ADDR' => '101.226.73.30'
+    'REMOTE_PORT' => '25653'
+    'SERVER_ADDR' => '10.141.78.241'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'admin.123slg.com'
+    'REDIRECT_STATUS' => '200'
+    'PATH_INFO' => ''
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => '*'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'admin.123slg.com'
+    'HTTP_USER_AGENT' => 'DNSPod-Monitor/2.0'
+    'PHP_SELF' => ''
+    'REQUEST_TIME_FLOAT' => 1476709011.9595
+    'REQUEST_TIME' => 1476709011
+]
+2016-10-17 20:57:48 [183.232.90.142][-][-][info][yii\web\Session::open] Session started
+2016-10-17 20:57:48 [183.232.90.142][-][-][info][application] $_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'USER' => 'www'
+    'HOME' => '/home/www'
+    'FCGI_ROLE' => 'RESPONDER'
+    'SCRIPT_FILENAME' => '/data/web/slg123/backend/web/index.php'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/data/web/slg123/backend/web'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.8.0'
+    'REMOTE_ADDR' => '183.232.90.142'
+    'REMOTE_PORT' => '33105'
+    'SERVER_ADDR' => '10.141.78.241'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'admin.123slg.com'
+    'REDIRECT_STATUS' => '200'
+    'PATH_INFO' => ''
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => '*'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'admin.123slg.com'
+    'HTTP_USER_AGENT' => 'DNSPod-Monitor/2.0'
+    'PHP_SELF' => ''
+    'REQUEST_TIME_FLOAT' => 1476709068.4221
+    'REQUEST_TIME' => 1476709068
+]
+2016-10-17 20:58:28 [183.60.5.176][-][-][info][yii\web\Session::open] Session started
+2016-10-17 20:58:28 [183.60.5.176][-][-][info][application] $_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'USER' => 'www'
+    'HOME' => '/home/www'
+    'FCGI_ROLE' => 'RESPONDER'
+    'SCRIPT_FILENAME' => '/data/web/slg123/backend/web/index.php'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/data/web/slg123/backend/web'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.8.0'
+    'REMOTE_ADDR' => '183.60.5.176'
+    'REMOTE_PORT' => '28795'
+    'SERVER_ADDR' => '10.141.78.241'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'admin.123slg.com'
+    'REDIRECT_STATUS' => '200'
+    'PATH_INFO' => ''
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => '*'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'admin.123slg.com'
+    'HTTP_USER_AGENT' => 'DNSPod-Monitor/2.0'
+    'PHP_SELF' => ''
+    'REQUEST_TIME_FLOAT' => 1476709108.1242
+    'REQUEST_TIME' => 1476709108
+]
+2016-10-17 20:59:07 [112.65.192.53][-][-][info][yii\web\Session::open] Session started
+2016-10-17 20:59:07 [112.65.192.53][-][-][info][application] $_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'USER' => 'www'
+    'HOME' => '/home/www'
+    'FCGI_ROLE' => 'RESPONDER'
+    'SCRIPT_FILENAME' => '/data/web/slg123/backend/web/index.php'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/data/web/slg123/backend/web'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.8.0'
+    'REMOTE_ADDR' => '112.65.192.53'
+    'REMOTE_PORT' => '51431'
+    'SERVER_ADDR' => '10.141.78.241'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'admin.123slg.com'
+    'REDIRECT_STATUS' => '200'
+    'PATH_INFO' => ''
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => '*'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'admin.123slg.com'
+    'HTTP_USER_AGENT' => 'DNSPod-Monitor/2.0'
+    'PHP_SELF' => ''
+    'REQUEST_TIME_FLOAT' => 1476709147.7442
+    'REQUEST_TIME' => 1476709147
+]
+2016-10-17 20:59:45 [112.90.82.164][-][-][info][yii\web\Session::open] Session started
+2016-10-17 20:59:45 [112.90.82.164][-][-][info][application] $_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'USER' => 'www'
+    'HOME' => '/home/www'
+    'FCGI_ROLE' => 'RESPONDER'
+    'SCRIPT_FILENAME' => '/data/web/slg123/backend/web/index.php'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/data/web/slg123/backend/web'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.8.0'
+    'REMOTE_ADDR' => '112.90.82.164'
+    'REMOTE_PORT' => '45354'
+    'SERVER_ADDR' => '10.141.78.241'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'admin.123slg.com'
+    'REDIRECT_STATUS' => '200'
+    'PATH_INFO' => ''
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => '*'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'admin.123slg.com'
+    'HTTP_USER_AGENT' => 'DNSPod-Monitor/2.0'
+    'PHP_SELF' => ''
+    'REQUEST_TIME_FLOAT' => 1476709185.4257
+    'REQUEST_TIME' => 1476709185
+]
+2016-10-17 20:59:52 [180.153.81.158][-][-][info][yii\web\Session::open] Session started
+2016-10-17 20:59:52 [180.153.81.158][-][-][info][application] $_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'USER' => 'www'
+    'HOME' => '/home/www'
+    'FCGI_ROLE' => 'RESPONDER'
+    'SCRIPT_FILENAME' => '/data/web/slg123/backend/web/index.php'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/data/web/slg123/backend/web'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.8.0'
+    'REMOTE_ADDR' => '180.153.81.158'
+    'REMOTE_PORT' => '56699'
+    'SERVER_ADDR' => '10.141.78.241'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'admin.123slg.com'
+    'REDIRECT_STATUS' => '200'
+    'PATH_INFO' => ''
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => '*'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'admin.123slg.com'
+    'HTTP_USER_AGENT' => 'DNSPod-Monitor/2.0'
+    'PHP_SELF' => ''
+    'REQUEST_TIME_FLOAT' => 1476709192.6766
+    'REQUEST_TIME' => 1476709192
+]
+2016-10-17 21:00:48 [183.232.90.77][-][-][info][yii\web\Session::open] Session started
+2016-10-17 21:00:48 [183.232.90.77][-][-][info][application] $_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'USER' => 'www'
+    'HOME' => '/home/www'
+    'FCGI_ROLE' => 'RESPONDER'
+    'SCRIPT_FILENAME' => '/data/web/slg123/backend/web/index.php'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/data/web/slg123/backend/web'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.8.0'
+    'REMOTE_ADDR' => '183.232.90.77'
+    'REMOTE_PORT' => '41270'
+    'SERVER_ADDR' => '10.141.78.241'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'admin.123slg.com'
+    'REDIRECT_STATUS' => '200'
+    'PATH_INFO' => ''
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => '*'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'admin.123slg.com'
+    'HTTP_USER_AGENT' => 'DNSPod-Monitor/2.0'
+    'PHP_SELF' => ''
+    'REQUEST_TIME_FLOAT' => 1476709248.1216
+    'REQUEST_TIME' => 1476709248
+]

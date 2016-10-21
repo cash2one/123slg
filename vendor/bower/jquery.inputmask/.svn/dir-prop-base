@@ -1,0 +1,36 @@
+K 14
+svn:auto-props
+V 704
+*.png = svn:mime-type=application/octet-stream
+*.jpg = svn:mime-type=application/octet-stream
+*.jpeg = svn:mime-type=application/octet-stream
+*.gif = svn:mime-type=application/octet-stream
+*.ico = svn:mime-type=application/octet-stream
+*.mov = svn:mime-type=application/octet-stream
+*.mp4 = svn:mime-type=application/octet-stream
+*.mp3 = svn:mime-type=application/octet-stream
+*.flv = svn:mime-type=application/octet-stream
+*.fla = svn:mime-type=application/octet-stream
+*.swf = svn:mime-type=application/octet-stream
+*.gz = svn:mime-type=application/octet-stream
+*.zip = svn:mime-type=application/octet-stream
+*.7z = svn:mime-type=application/octet-stream
+*.ttf = svn:mime-type=application/octet-stream
+
+K 18
+svn:global-ignores
+V 47
+test.html
+jquery-1.10.2.js
+npm-debug.log
+*.iml
+
+K 10
+svn:ignore
+V 42
+build
+node_modules
+bower_components
+.idea
+
+END

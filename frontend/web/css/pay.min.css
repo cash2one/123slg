@@ -1,0 +1,1026 @@
+@charset "utf-8";
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td {
+    padding: 0;
+    margin: 0;
+    font-size: 12px;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+fieldset, img {
+    border: 0;
+}
+
+address, caption, cite, code, dfn, em, strong, th, var {
+    font-weight: normal;
+    font-style: normal;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+caption, th {
+    text-align: left;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
+    font-size: 100%;
+}
+
+q:before, q:after {
+    content:;
+}
+
+abbr, acronym {
+    border: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.fl {
+    float: left;
+    display: inline;
+}
+
+.fr {
+    float: right;
+    display: inline;
+}
+
+.clear {
+    clear: both;
+}
+
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.tr {
+    text-align: right;
+}
+
+.tc {
+    text-align: center;
+}
+
+legend {
+    display: none;
+}
+
+body {
+    background: #e8e8e8;
+    font-family: '宋体' ，Verdana, Arial, Helvetica, sans-serif;
+}
+
+.maskLayer {
+    display: none;
+    background: gray;
+    position: fixed;
+    z-index: 3;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    -moz-opacity: .4;
+    opacity: .4;
+    filter: alpha(opacity=40);
+    overflow: hidden;
+}
+
+* html .maskLayer {
+    position: absolute;
+}
+
+.header, .navlist, .content {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.header {
+    height: 87px;
+    clear: both;
+}
+
+.logo {
+    width: 298px;
+    height: 81px;
+    background: url(../images/123slg_logo.png) no-repeat 0 17px;
+    float: left;
+}
+
+.slogan {
+    width: 487px;
+    height: 87px;
+    background: url(../images/pay/images/slogan.png) no-repeat;
+    float: right;
+}
+
+.nav {
+    width: 100%;
+    height: 44px;
+    background: url(../images/pay/images/nav_re.jpg) repeat-x;
+}
+
+.navlist {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.navlist li {
+    height: 44px;
+}
+
+.navlist li a {
+    display: inline-block;
+    width: 82px;
+    height: 44px;
+    line-height: 44px;
+    color: #f5f4f4;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.navlist li a.navCurrent {
+    background: url(../images/pay/images/nav_over.jpg);
+}
+
+.content {
+    margin: 50px auto;
+    overflow: hidden;
+}
+
+.left {
+    width: 247px;
+    float: left;
+    background: #f7f7f7;
+    border: 1px solid #cfcfcf;
+}
+
+.payWayWrap {
+    position: relative;
+    width: 100%;
+    min-height: 600px;
+    height: auto;
+    _height: 600px;
+}
+
+.selPayWay {
+    color: #462525;
+    font-size: 14px;
+    display: inline-block;
+    width: 231px;
+    height: 33px;
+    line-height: 33px;
+    background: url(../images/pay/images/payWay_re.jpg) repeat-x;
+    padding: 0 0 0 16px;
+}
+
+.selPayWay b {
+    position: absolute;
+    left: -1px;
+    top: -1px;
+    display: inline-block;
+    width: 249px;
+    height: 4px;
+    font-size: 0;
+    background: #7c1b1b;
+}
+
+.payWay {
+    position: absolute;
+    top: 33px;
+    left: 0;
+}
+
+.payWay li {
+    z-index: 2;
+    width: 216px;
+    border-bottom: 1px solid #d9d9d9;
+    margin: 0 16px 0;
+    outline: none;
+}
+
+.payWay li span {
+    display: inline-block;
+    width: 200px;
+    height: 45px;
+    line-height: 45px;
+    color: #462525;
+    font-size: 14px;
+    background: url(../images/pay/images/arrow.gif) no-repeat 0 15px;
+    padding: 0 0 0 16px;
+    cursor: pointer;
+}
+
+.payWay li.current {
+    position: relative;
+    width: 242px;
+    background: #f7f7f7;
+    border-bottom: 1px solid #d9d9d9;
+    border-top: 1px solid #d9d9d9;
+    top: -1px;
+    margin: 0;
+    padding: 0 0 0 16px;
+}
+
+.payWay li.current span {
+    color: #bb4a0c;
+    background: url(../images/pay/images/arrow_cur.gif) no-repeat 0 15px;
+}
+
+.right {
+    width: 740px;
+    float: right;
+    background: #f7f7f7;
+    border: 1px solid #cfcfcf;
+    min-height: 600px;
+    height: auto;
+    _height: 600px;
+}
+
+.wrap {
+    margin: 25px 20px;
+    position: relative;
+}
+
+.tip {
+    color: #343434;
+}
+
+.line {
+    width: 100%;
+    border-bottom: 1px dashed #c0c0c0;
+    margin: 10px 0;
+    font-size: 0;
+}
+
+.accounts li {
+    height: 30px;
+    line-height: 30px;
+    padding: 0 0 0 160px;
+}
+
+.accounts li label span {
+    color: red;
+    padding: 0 3px;
+}
+
+.accounts li input {
+    height: 20px;
+    line-height: 20px;
+    border: 1px solid #dcdcdc;
+    border-radius: 3px;
+}
+
+.gameSerRole {
+    overflow: hidden;
+    padding: 0 0 0 15px;
+}
+
+.gameSerRole li {
+    float: left;
+    width: 166px;
+    height: 40px;
+    line-height: 40px;
+    background: url(../images/pay/images/select.png);
+    margin: 0 25px 0 0;
+    padding: 0 0 0 20px;
+    cursor: pointer;
+    font-size: 14px;
+    color: #fff;
+}
+
+.close {
+    width: 20px;
+    height: 20px;
+    position: relative;
+    top: 11px;
+    right: 5px;
+    float: right;
+    cursor: pointer;
+}
+
+#onlineKQ, #zfb, #weixin, #szxCard, #ltCard, #dxCard, #jwCard, #ztCard, #sdCard, #ghCard, #ganiuweixin {
+    display: none;
+}
+
+.game {
+    display: none;
+    width: 420px;
+    height: 191px;
+    background: url(../images/pay/images/pop.png);
+    position: absolute;
+    top: 126px;
+    left: 0;
+    z-index: 1;
+}
+
+.game .gameTab {
+    overflow: hidden;
+}
+
+.gameTab ul {
+    padding: 12px 0 0 11px;
+}
+
+.gameTab ul li {
+    float: left;
+    width: 59px;
+    height: 23px;
+    line-height: 23px;
+    text-align: center;
+    color: #f7f7f7;
+    cursor: pointer;
+}
+
+.gameTab ul li.cur {
+    color: #462525;
+    background: #f7f7f7;
+    border-radius: 3px 3px 0 0;
+}
+
+.allGame {
+    padding: 5px 15px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 140px;
+    margin: 0 5px 0 0;
+    clear: both;
+}
+
+.allGame li {
+    float: left;
+    width: 25%;
+    height: 30px;
+    line-height: 30px;
+}
+
+.allGame li label, .allGame li input {
+    cursor: pointer;
+}
+
+.allGame li label, .allGame li input, .allGame li span {
+    display: inline-block;
+    height: 30px;
+    line-height: 30px;
+}
+
+.allGame li input {
+    margin: 0 2px 0 0;
+    float: left;
+    width: 13px;
+}
+
+.allGame li span {
+    float: left;
+}
+
+.server {
+    display: none;
+    width: 420px;
+    height: 191px;
+    background: url(../images/pay/images/pop.png);
+    position: absolute;
+    top: 126px;
+    left: 137px;
+    z-index: 1;
+}
+
+.server .serTab {
+    overflow: hidden;
+}
+
+.serTab ul {
+    padding: 12px 0 0 11px;
+}
+
+.serTab ul li {
+    float: left;
+    width: 59px;
+    height: 23px;
+    line-height: 23px;
+    text-align: center;
+    color: #f7f7f7;
+    cursor: pointer;
+}
+
+.serTab ul li.cur {
+    color: #462525;
+    background: #f7f7f7;
+    border-radius: 3px 3px 0 0;
+}
+
+.allSer {
+    padding: 5px 15px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 140px;
+    margin: 0 5px 0 0;
+    clear: both;
+}
+
+.allSer li {
+    float: left;
+    width: 120px;
+    height: 30px;
+    line-height: 30px;
+}
+
+.allSer li label, .allSer li input {
+    cursor: pointer;
+}
+
+.allSer li label, .allSer li input, .allSer li span {
+    display: inline-block;
+    height: 30px;
+    line-height: 30px;
+}
+
+.allSer li input {
+    margin: 0 2px 0 0;
+    float: left;
+    width: 13px;
+}
+
+.allSer li span {
+    float: left;
+}
+
+.role {
+    display: none;
+    width: 420px;
+    height: 191px;
+    background: url(../images/pay/images/pop.png);
+    position: absolute;
+    right: 0;
+    top: 126px;
+    z-index: 1;
+}
+
+.role .roleTab {
+    overflow: hidden;
+}
+
+.roleTab ul {
+    padding: 12px 0 0 11px;
+}
+
+.roleTab ul li {
+    float: left;
+    width: 59px;
+    height: 23px;
+    line-height: 23px;
+    text-align: center;
+    color: #f7f7f7;
+    cursor: pointer;
+}
+
+.roleTab ul li.cur {
+    color: #462525;
+    background: #f7f7f7;
+    border-radius: 3px 3px 0 0;
+}
+
+.hisRole {
+    padding: 5px 15px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    height: 140px;
+    margin: 0 5px 0 0;
+    clear: both;
+}
+
+.hisRole li {
+    float: left;
+    width: 120px;
+    height: 30px;
+    line-height: 30px;
+}
+
+.hisRole li label, .hisRole li input {
+    cursor: pointer;
+}
+
+.hisRole li label, .hisRole li input, .hisRole li span {
+    display: inline-block;
+    height: 30px;
+    line-height: 30px;
+}
+
+.hisRole li input {
+    margin: 0 2px 0 0;
+    float: left;
+    width: 13px;
+}
+
+.hisRole li span {
+    float: left;
+}
+
+.money ul {
+    margin: 15px 0;
+    padding: 0 0 0 15px;
+}
+
+.money ul li {
+    overflow: hidden;
+}
+
+.money ul li label {
+    display: inline-block;
+    width: 200px;
+    height: 26px;
+    line-height: 26px;
+    float: left;
+    padding: 0 0 0 2px;
+}
+
+.money ul li label input {
+    height: 26px;
+    line-height: 26px;
+    margin: 0 3px 0 0;
+    float: left;
+}
+
+.money ul li label span {
+    float: left;
+}
+
+.yeepayAndshengfutong {
+    display: none;
+}
+
+.yeepayAndshengfutong .tip {
+    float: left;
+    height: 30px;
+    line-height: 30px;
+}
+
+.yeepayAndshengfutong ul {
+    margin: 15px 0;
+    padding: 0 0 0 15px;
+}
+
+.yeepayAndshengfutong ul li {
+    overflow: hidden;
+}
+
+.yeepayAndshengfutong ul li label {
+    display: inline-block;
+    width: 200px;
+    height: 30px;
+    line-height: 30px;
+    float: left;
+}
+
+.yeepayAndshengfutong ul li label input {
+    height: 30px;
+    line-height: 30px;
+    margin: 0 3px 0 0;
+    float: left;
+}
+
+.yeepayAndshengfutong ul li label img {
+    float: left;
+}
+
+.bank ul {
+    margin: 15px 0;
+    padding: 0 0 0 15px;
+}
+
+.bank ul li {
+    overflow: hidden;
+}
+
+.bank ul li label {
+    display: inline-block;
+    width: 160px;
+    height: 30px;
+    line-height: 30px;
+    float: left;
+    padding: 0 0 0 2px;
+}
+
+.bank ul li label input {
+    height: 22px;
+    line-height: 22px;
+    margin: 0 3px 0 0;
+    float: left;
+}
+
+.bank ul li label img {
+    float: left;
+}
+
+.payBtn {
+    width: 100%;
+    text-align: center;
+}
+
+.payBtn input {
+    display: inline-block;
+    width: 134px;
+    height: 40px;
+    background: url(../images/pay/images/pay.png) no-repeat;
+    margin: 0 auto;
+    border: 0 none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.declare {
+    line-height: 25px;
+    padding: 10px 0 0;
+}
+
+.payInfo {
+    display: none;
+    position: fixed;
+    _position: absolute;
+    z-index: 4;
+    left: 50%;
+    top: 50%;
+    width: 445px;
+    height: 325px;
+    margin: -162.5px 0 0 -222.5px;
+    background: url(../images/pay/images/rechargeInfo.png);
+}
+
+.payInfo .close {
+    top: 5px;
+}
+
+.payInfo h1 {
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;
+    height: 32px;
+    line-height: 32px;
+    padding: 0 0 0 26px;
+}
+
+.payInfoDetail {
+    margin: 35px 0 0 102px;
+}
+
+.payInfoDetail h2 {
+    color: #3fa03f;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.payInfoDetail ul {
+    margin: 10px 0;
+}
+
+.payInfoDetail ul li {
+    color: #343434;
+}
+
+.payInfoDetail ul li span {
+    display: inline-block;
+    height: 25px;
+    line-height: 25px;
+}
+
+.payInfoDetail ul li span.w1 {
+    width: 115px;
+    color: #72788d;
+}
+
+.subPayInfo input {
+    border: 0 none;
+    display: inline-block;
+    width: 105px;
+    height: 29px;
+    color: #f7f7f7;
+    cursor: pointer;
+    margin: 0 15px 0 0;
+}
+
+.subPayInfo input#togateway {
+    background: url(../images/pay/images/result.png);
+}
+
+.subPayInfo input#back {
+    background: url(../images/pay/images/back.png);
+}
+
+.payResult {
+    display: none;
+    position: fixed;
+    _position: absolute;
+    z-index: 5;
+    left: 50%;
+    top: 50%;
+    width: 445px;
+    height: 204px;
+    margin: -102px 0 0 -222.5px;
+    background: url(../images/pay/images/tip.png);
+}
+
+.payResult .close {
+    top: 5px;
+}
+
+.payResult h1 {
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;
+    height: 32px;
+    line-height: 32px;
+    padding: 0 0 0 26px;
+}
+
+.closeOrrefresh {
+    margin: 19px 0 0 50px;
+}
+
+.closeOrrefresh h2 {
+    color: #3fa03f;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.closeOrrefresh p {
+    line-height: 23px;
+    padding: 15px 0 10px 0;
+}
+
+.checkPayResult {
+    margin: 0 0 0 50px;
+}
+
+.checkPayResult input, .checkPayResult a {
+    border: 0 none;
+    display: inline-block;
+    width: 105px;
+    height: 29px;
+    line-height: 29px;
+    color: #f7f7f7;
+    cursor: pointer;
+    margin: 0 15px 0 0;
+    float: left;
+    text-align: center;
+}
+
+.checkPayResult a#result {
+    background: url(../images/pay/images/result.png);
+}
+
+.checkPayResult a#help {
+    background: url(../images/pay/images/result.png);
+}
+
+.checkPayResult input#back {
+    background: url(../images/pay/images/back.png);
+}
+
+.showPayResult {
+    width: 900px;
+    margin: 50px auto 0;
+    padding: 50px;
+    border-radius: 10px;
+    background: #fff;
+    overflow: hidden;
+}
+
+.failure, .success {
+    width: 290px;
+    height: 330px;
+    float: left;
+}
+
+.failure {
+    background: url(../images/pay/images/failure.png) no-repeat;
+}
+
+.success {
+    background: url(../images/pay/images/success.png) no-repeat;
+}
+
+.showPayResultList {
+    position: relative;
+    top: 15px;
+    left: 55px;
+}
+
+.showPayResultList ul {
+    margin: 10px 0 0;
+}
+
+.showPayResultList ul li {
+    color: #343434;
+}
+
+.showPayResultList ul li span {
+    display: inline-block;
+    height: 30px;
+    line-height: 30px;
+    font-size: 14px;
+}
+
+.showPayResultList ul li span.w1 {
+    width: 115px;
+    color: #959595;
+}
+
+.link {
+    margin: 25px 0 0;
+}
+
+.link a {
+    border: 0 none;
+    display: inline-block;
+    width: 105px;
+    height: 29px;
+    line-height: 29px;
+    text-align: center;
+    color: #f7f7f7;
+    cursor: pointer;
+    margin: 0 15px 0 0;
+}
+
+.link a.toPay {
+    background: url(../images/pay/images/result.png);
+}
+
+.link a.gameCenter {
+    background: url(../images/pay/images/result.png);
+}
+
+.link a.customer {
+    background: url(../images/pay/images/result.png);
+}
+
+.link a.help {
+    background: url(../images/pay/images/result.png);
+}
+
+.question {
+    width: 940px;
+    margin: 50px auto 0;
+    padding: 50px 30px;
+    border-radius: 10px;
+    background: #fff;
+    overflow: hidden;
+}
+
+.question h1 {
+    font-size: 16px;
+    font-weight: bold;
+    color: #462525;
+    padding: 0 0 12px 0;
+    text-align: center;
+}
+
+.question div {
+    margin: 0 0 25px 0;
+    padding: 0 0 20px 0;
+    height: 100%;
+    border-bottom: 1px dashed #ccc;
+    overflow: hidden;
+}
+
+.question div p {
+    font-size: 14px;
+    line-height: 28px;
+    color: #515151;
+    padding: 5px 0;
+    overflow: hidden;
+}
+
+.question div p strong {
+    font-weight: bold;
+}
+
+.question div p em, .question div p span {
+    display: inline-block;
+    float: left;
+    font-size: 13px;
+}
+
+.question div p span {
+    width: 96%;
+}
+
+.company {
+    width: 1000px;
+    height: 100%;
+    margin: 50px auto 0;
+    padding: 0 0 20px;
+    overflow: hidden;
+}
+
+a.logo {
+    float: left;
+    width: 163px;
+    height: 63px;
+    background: url(../images/123slg_logo.png) no-repeat;
+}
+
+.ruizhan {
+    width: 246px;
+    float: left;
+    padding: 3px 20px 0;
+}
+
+.ruizhan a {
+    color: #4e4e4e;
+    display: inline-block;
+    height: 18px;
+    line-height: 18px;
+}
+
+.public {
+    float: right;
+}
+
+.public a {
+    float: left;
+    margin: 0 0 0 10px;
+    padding: 0 5px;
+    border: 1px solid #cfcfcf;
+    height: 57px;
+}
+
+.public a.shgs img {
+    position: relative;
+    top: 5px;
+}
+
+.public a.jingwu img {
+    position: relative;
+    top: 5px;
+}
+
+.public a.policeicon img {
+    position: relative;
+    top: 8px;
+}
+
+.public a.zx110 img {
+    position: relative;
+    top: 8px;
+}
+
+.public a.wenww img {
+    position: relative;
+    top: 3px;
+}
+
+.weixinqrc {
+    display: none;
+    position: fixed;
+    _position: absolute;
+    z-index: 6;
+    left: 50%;
+    top: 50%;
+    width: 445px;
+    height: 325px;
+    margin: -162.5px 0 0 -222.5px;
+    background: url(../images/pay/images/rechargeInfo.png);
+}
+
+.weixinqrc .close {
+    top: 5px;
+}
+
+.weixinqrc h1 {
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;
+    height: 32px;
+    line-height: 32px;
+    padding: 0 0 0 26px;
+}
+
+.wxInfo {
+    margin: 13px 28px 0 28px;
+    background: #f7f7f7;
+    text-align: center;
+}
+
+.wxInfo p {
+    line-height: 23px;
+    padding: 15px 0 10px 0;
+}

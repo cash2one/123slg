@@ -1,0 +1,3 @@
+a:2:{i:0;a:2:{i:0;s:142:"        <a href="http://www.265g.com" target="_blank">265G</a>
+        <a href="http://www.07073.com" target="_blank">07073</a>
+            ";i:1;N;}i:1;O:24:"yii\caching\DbDependency":5:{s:2:"db";s:2:"db";s:3:"sql";s:32:"SELECT MAX(updated_at) FROM link";s:6:"params";a:0:{}s:4:"data";a:1:{s:15:"MAX(updated_at)";s:10:"1472204541";}s:8:"reusable";b:0;}}

@@ -1,0 +1,13 @@
+a:2:{i:0;a:2:{i:0;s:847:"                                                    <li >
+                                <a href="/game/enter?game_id=1&server_id=1">
+                                    <span class="td1">09-19 11:16:37</span>
+                                    <span class="td2">怒海风云</span>
+                                    <span class="td3">双线1服</span></a>
+                            </li>
+                                                    <li >
+                                <a href="/game/enter?game_id=3&server_id=1">
+                                    <span class="td1">09-05 17:00:00</span>
+                                    <span class="td2">斗三国</span>
+                                    <span class="td3">双线1服</span></a>
+                            </li>
+                                                ";i:1;N;}i:1;O:24:"yii\caching\DbDependency":5:{s:2:"db";s:2:"db";s:3:"sql";s:34:"SELECT MAX(updated_at) FROM server";s:6:"params";a:0:{}s:4:"data";a:1:{s:15:"MAX(updated_at)";s:10:"1474255013";}s:8:"reusable";b:0;}}

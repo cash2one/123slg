@@ -1,0 +1,63 @@
+@charset "utf-8";
+/* CSS Document */
+/********** 公共样式 **********/
+body, ol, ul, li, h1, h2, h3, h4, h5, h6, p, th, td, dl, dd, form, fieldset, legend, input, textarea, select { margin: 0; padding: 0 }
+ul, ol { list-style: none; }
+h1, h2, h3, h4, h5, h6 { font-weight: normal; }
+a { text-decoration: none; }
+a:hover { text-decoration: none; }
+p { word-wrap: break-word }
+a:focus, input, textarea { outline-style: none; }
+body { font-size: 12px; background-color: #fff; min-width: 1000px; overflow-x: hidden; }
+body, input, textarea, select { font-family: Arial, "Microsoft Yahei", "Lantinghei SC", "Helvetica Neue" }
+.clear:before, .clear:after { content: "."; display: block; height: 0; visibility: hidden; clear: both; }
+.clear:after { clear: both; }
+.clear { zoom: 1; }
+/*背景开始*/
+.s_body {}
+.head_nav a span { background: url("../images/game/server_nav_icon.png") no-repeat; }
+.start_btn,.server_title,.server_list li { background: url("../images/game/server_btn.png") no-repeat; }
+/*logo开始*/
+.logo { display: block; width: 200px; height: 120px; position: absolute; top: 45px; left: 27px; text-indent: -9999px; }
+/*开服列表开始*/
+.s_wrap { width: 804px; height: 1200px; position: absolute; top: 0; left: 260px; overflow: hidden; }
+/*头部导航条开始*/
+.head_nav {background: #2a3039;}
+.head_nav a { display: inline-block; float: left; width: 200px; height: 90px; border-right: 1px solid #2a3039; text-align: center; background:#653334; }
+.head_nav a:hover { background: #471e1f; }
+.head_nav a span { display: inline-block; padding-left: 26px; font-size: 22px; line-height: 22px; margin-top: 34px; color: #cccccc; }
+.head_nav a .head_nav01 { background-position: 0 0; }
+.head_nav a .head_nav02 { background-position: 0 -25px; }
+.head_nav a .head_nav03 { background-position: 0 -49px; }
+.head_nav a .head_nav04 { background-position: 0 -74px; }
+/*用户登录和服务器列表文字样式*/
+.logn_head, .list_head { font-size: 18px; font-weight: bold; color: #9c877f; height: 50px; line-height: 50px; text-align: center; }
+.logn_head { margin: 30px auto 0; }
+.list_head { margin: 54px auto 0; }
+/*游戏开始按钮*/
+.logn_state { height: 80px; margin: 50px auto 0; }
+.start_btn { display: block; width: 260px; height: 82px; margin: 0 auto; background-position: 0 -70px; }
+.start_btn:active{ background-position: 0 -153px; }
+.logn_info h3 { font-size: 16px; color: #ccc; text-align: center; }
+.logn_info h3 a { color: #ccc; text-decoration: underline; }
+.logn_info p { font-size: 18px; color: #ffcc99; text-align: center; margin-top: 15px; }
+.logn_info p a { color: #ffcc99; text-decoration: underline; }
+.logn_info h3 a:hover, .logn_info p a:hover { text-decoration: none; }
+/*区服推荐*/
+.server_title { width: 370px; height: 70px; background-position:0 0; margin: 30px auto 0; }
+.server_title span { display: inline-block; width: 30px; height: 50px; text-align: center; padding: 10px; font-size: 14px; line-height: 16px; color: #fff000; float: left; }
+.server_title a { display: inline-block; width: 320px; text-align: center; font-size: 22px; color: #fefefe; line-height: 70px; float: right; }
+.server_title a:hover { color: #fffc00; }
+/*区服推荐列表*/
+.server_box { width: 726px; height: 620px; overflow: hidden; overflow-y: auto; margin: 38px auto 0; position: relative; }
+.server_list { width: 711px; position: absolute; top: -10px; left: 0; }
+.server_list li { float: left; background-position:0 -236px; margin: 10px 10px 0 0; font-size: 16px; text-align: center; line-height: 60px; }
+.server_list li a { display: block; color: #e7dccc; width: 227px; height: 60px; transition: all .3s ease; -webkit-transition: all .3s ease; -moz-transition: all .3s ease; -o-transition: all .3s ease; }
+.server_list li a span { margin-left: 5px; }
+.server_list li a:hover { color: #ff9c00; }
+/*webkit滚动条样式*/
+#scroll::-webkit-scrollbar { width: 15px; }
+#scroll::-webkit-scrollbar-button { display: none; }
+#scroll::-webkit-scrollbar-track { display: none; }
+#scroll::-webkit-scrollbar-track-piece { background: #000; }
+#scroll::-webkit-scrollbar-thumb { background: #6E5428; }

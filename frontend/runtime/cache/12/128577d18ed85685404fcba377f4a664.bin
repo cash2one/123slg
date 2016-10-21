@@ -1,0 +1,43 @@
+a:2:{i:0;a:2:{i:0;s:2656:"                                <li>
+                                    <img class="avatar" src="/upload/game/20160905155217.jpg"
+                                         alt="怒海风云"/>
+                                    <table>
+                                        <tbody>
+                                        <tr>
+                                            <td class="td1">怒海风云</td>
+                                            <td class="td2">时间</td>
+                                        </tr>
+                                        <tr class="tr2">
+                                            <td class="td1">双线1服</td>
+                                            <td class="td2">09-19</td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="javascript:void(0);" class="enter odd"
+                                                   onclick="centerLoginGame('http://nhfy.123slg.com','nhfy','989')">进入游戏</a>
+                                            </td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </li>
+                                                                <li>
+                                    <img class="avatar" src="/upload/game/20160905155945.jpg"
+                                         alt="斗三国"/>
+                                    <table>
+                                        <tbody>
+                                        <tr>
+                                            <td class="td1">斗三国</td>
+                                            <td class="td2">时间</td>
+                                        </tr>
+                                        <tr class="tr2">
+                                            <td class="td1">双线1服</td>
+                                            <td class="td2">09-05</td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="javascript:void(0);" class="enter odd"
+                                                   onclick="centerLoginGame('http://nhfy.123slg.com','nhfy','989')">进入游戏</a>
+                                            </td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </li>
+                                ";i:1;N;}i:1;O:24:"yii\caching\DbDependency":5:{s:2:"db";s:2:"db";s:3:"sql";s:34:"SELECT MAX(updated_at) FROM server";s:6:"params";a:0:{}s:4:"data";a:1:{s:15:"MAX(updated_at)";s:10:"1474255013";}s:8:"reusable";b:0;}}

@@ -1,0 +1,13 @@
+K 18
+svn:global-ignores
+V 26
+composer.lock
+README.html
+
+K 10
+svn:ignore
+V 13
+.idea
+vendor
+
+END

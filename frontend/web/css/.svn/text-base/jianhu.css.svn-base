@@ -1,0 +1,39 @@
+/*main*/
+img{border:none;}
+.z1{ color:#555; font-size:12px; }
+.z1 a{ color:#555; font-size:12px; text-decoration:none;}
+.z1 a:hover{ color:#555; font-size:12px; text-decoration:underline;}
+.z2{ color:#666; font-size:14px; font-weight:bold}
+.z2 a{ color:#666; font-size:14px; text-decoration:none;}
+.z2 a:hover{ color:#666; font-size:14px; text-decoration:underline;}
+.z3{ color:#333; font-size:14px; font-weight:bold}
+.z3 a{ color:#333; font-size:14px; text-decoration:none;}
+.z3 a:hover{ color:#333; font-size:14px; text-decoration:underline;}
+
+.hong{ color:#FF0000;}
+.hong a{ color:#FF0000; text-decoration:none;}
+.hong a:hover{ color:#FF0000;text-decoration:underline;}
+
+body{margin:auto; margin-top:0px;}
+.top{ height:31px;  background-image:url(../images/title.jpg); margin:auto; margin-top:0px; }
+.banner{ background-image:url(../images/banner.jpg);  background-position:center;margin:auto;height:481px;}
+.body{ width:1010px;margin:auto; }
+.line{ float:left}
+.content{ float:left; width:930px; margin:auto; margin:0 26px;_margin:0 13px; margin-top:-11px;} 
+.clear{ clear:both}
+.cont1{ background-image:url(../images/cont.jpg); background-repeat:repeat-y;margin:0; padding:10px;MIN-HEIGHT:150px;HEIGHT: auto!important;HEIGHT:150px; line-height:40px;}
+.cont-l{ float:left;width:783px; margin-left:10px;}
+.cont-r{ float:left;width:101px; margin-left:10px;}
+.right{ width:783px;text-align:right;height:30px;}
+.shuom{ float:left;width:665px;height:111px;background-image:url(../images/shuom.jpg);margin-top:2px;margin-right:10px;line-height:28px; padding:50px 15px 0 15px;}
+.liuc{ float:left;width:665px;height:111px;background-image:url(../images/liuc.jpg);margin-top:2px;margin-right:10px;line-height:28px;padding:50px 15px 0 15px;}
+.contr{ float:left;width:224px;height:154px;background-image:url(../images/left-con.jpg); margin-top:5px;}
+.conttop{line-height:31px; margin-bottom:3px; margin-left:35px}
+.list{ padding:3px 0px 3px 20px;}
+.footer{width:1010px;margin:auto;border-top:#999999 1px solid; margin-top:40px;line-height:28px;}
+.content1{ float:left; width:950px; margin:auto; margin:0 16px;_margin:0 10px; margin-top:5px;}
+.content-l{ float:left;width:224px;}
+.content-r{ float:right;width:700px;margin-top:20px;line-height:28px;}
+.r-top{ line-height:28px;border-bottom:#999999 1px solid; }
+.r-cont{ padding:10px 20px;}
+.title{ text-align:center; margin:10px 0;}

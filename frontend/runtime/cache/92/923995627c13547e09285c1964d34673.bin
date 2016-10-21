@@ -1,0 +1,13 @@
+a:2:{i:0;a:2:{i:0;s:762:"                                            <li>
+                            <a href="http://dsg.web.com" target="_blank"><img
+                                    src="/upload/dyj/20160905155926.jpg"/></a>
+                        </li>
+                                            <li>
+                            <a href="http://xjdg.web.com" target="_blank"><img
+                                    src="/upload/dyj/20160905155529.jpg"/></a>
+                        </li>
+                                            <li>
+                            <a href="http://nhfy.web.com" target="_blank"><img
+                                    src="/upload/dyj/20160905155159.jpg"/></a>
+                        </li>
+                                        ";i:1;N;}i:1;O:24:"yii\caching\DbDependency":5:{s:2:"db";s:2:"db";s:3:"sql";s:33:"SELECT MAX(updated_at) FROM wheel";s:6:"params";a:0:{}s:4:"data";a:1:{s:15:"MAX(updated_at)";s:10:"1473062368";}s:8:"reusable";b:0;}}

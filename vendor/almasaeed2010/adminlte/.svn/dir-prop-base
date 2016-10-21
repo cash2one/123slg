@@ -1,0 +1,19 @@
+K 18
+svn:global-ignores
+V 50
+*.DS_Store
+*.log
+*.zip
+.idea
+ad.js
+TODO
+test.html
+
+K 10
+svn:ignore
+V 35
+.sass-cache
+nbproject
+node_modules
+
+END

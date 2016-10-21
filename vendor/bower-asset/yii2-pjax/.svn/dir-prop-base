@@ -1,0 +1,12 @@
+K 18
+svn:global-ignores
+V 66
+.idea
+nbproject
+.buildpath
+.project
+.settings
+Thumbs.db
+.DS_Store
+
+END
